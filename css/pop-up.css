@@ -87,8 +87,8 @@
 
 .popUpButton:hover {
   transition: 0.3s;
-  /* background: #262300;
-  color: #FEE600; */
+  background: #262300;
+  color: #FEE600;
   transform: scale(1.1);
 }
 
