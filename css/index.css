@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+
+body {
+  background: #FEE600;
+  position: relative;
+  min-height: 100vh;
+  min-width: 320px;
+}
+
+.menuBlock {
+  width: 92.22222%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 88px;
+  height: auto;
+  display: block;
+}
+
+.link {
+  font-family: "Futura_Demi";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  outline: none;
+  color: #262300;
+  position: relative;
+}
+
+.link:hover {
+  color: #FEE600;
+  background: #262300;
+  transition: 0.3s;
+}
+
+.linkLast {
+  right: -10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  width: 92.22222%;
+  margin: 0 auto;
+}
+
+.articles {
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.caption36 {
+  font-family: "Futura_Bold";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align-last: left;
+  color: #262300;
+}
+
+.captionArticles {
+  margin: 40px 0 20px;
+}
+
+.articleItemImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.articleItemImgBlock {
+  width: 100%;
+  height: 255px;
+  position: relative;
+}
+
+.captionArticles2 {
+  margin: 20px auto 9px;
+}
+
+.captionArticles3 {
+  margin-top: 8px;
+}
+
+.textArticles {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.caption20 {
+  font-family: "Futura_Bold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align-last: left;
+}
+
+.text16 {
+  font-family: "Futura_Book";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align-last: left;
+}
+
+.articleItem {
+  display: inline-block;
+  vertical-align: top;
+  width: 31.3%;
+  text-decoration: none;
+  outline: none;
+  margin-bottom: 40px;
+}
+
+.articleItemImgWait {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleItemImgWait p {
+  text-align: center;
+  text-align-last: center;
+}
+
+.other {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  height: 118px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherInside {
+  width: 92.22222%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.captionOther {
+  color: #FFFFFF;
+}
+
+.otherItems, .otherItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherItem {
+  margin-left: 80px;
+}
+
+.otherImg {
+  width: 38px;
+  height: auto;
+  display: block;
+  margin-left: 20px;
+}
+
+.otherItem:hover p {
+  color: #FEE600;
+  transition: 0.3s;
+}
+
+.toBottom {
+  position: absolute;
+  bottom: 0;
+}
