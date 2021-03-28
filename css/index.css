@@ -11,19 +11,68 @@ body {
   min-width: 320px;
 }
 
+.body {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+}
+
 .menuBlock {
   width: 92.22222%;
+  max-width: 1328px;
   height: 80px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0;
+}
+
+.animationFadeInDown {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  animation: fadeInDown 1s;
+  /* -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; */
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 
 .logo {
   width: 88px;
   height: auto;
   display: block;
+}
+
+.logoHidden {
+  display: none;
 }
 
 .link {
@@ -38,6 +87,9 @@ body {
   margin-left: 10px;
   text-decoration: none;
   outline: none;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   color: #262300;
   position: relative;
 }
@@ -46,6 +98,8 @@ body {
   color: #FEE600;
   background: #262300;
   transition: 0.3s;
+  border-radius: 5px;
+  transform: scale(1.1);
 }
 
 .linkLast {
@@ -58,14 +112,29 @@ body {
   align-items: center;
 }
 
+.menuBg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.menuMobile, .menuMobileHidden {
+  display: none;
+}
+
 .block {
   width: 92.22222%;
+  max-width: 1328px;
   margin: 0 auto;
+  position: relative;
 }
 
 .articles {
   text-align: justify;
-  text-align-last: justify;
 }
 
 .caption36 {
@@ -76,7 +145,6 @@ body {
   line-height: 41px;
   letter-spacing: 0em;
   text-align: left;
-  text-align-last: left;
   color: #262300;
 }
 
@@ -117,7 +185,16 @@ body {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
-  text-align-last: left;
+}
+
+.caption16 {
+  font-family: "Futura_Demi";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .text16 {
@@ -128,7 +205,6 @@ body {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  text-align-last: left;
 }
 
 .articleItem {
@@ -137,6 +213,9 @@ body {
   width: 31.3%;
   text-decoration: none;
   outline: none;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   margin-bottom: 40px;
 }
 
@@ -156,53 +235,344 @@ body {
 
 .articleItemImgWait p {
   text-align: center;
-  text-align-last: center;
-}
-
-.other {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  height: 118px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.otherInside {
-  width: 92.22222%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.captionOther {
-  color: #FFFFFF;
-}
-
-.otherItems, .otherItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.otherItem {
-  margin-left: 80px;
-}
-
-.otherImg {
-  width: 38px;
-  height: auto;
-  display: block;
-  margin-left: 20px;
-}
-
-.otherItem:hover p {
-  color: #FEE600;
-  transition: 0.3s;
 }
 
 .toBottom {
   position: absolute;
   bottom: 0;
+}
+
+.other {
+  margin-top: 80px;
+  position: relative;
+  padding-bottom: 22px;
+}
+
+.otherBgShape {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+  position: absolute;
+  top: -100px;
+  left: -100%;
+  right: -100%;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.otherBgShape2 {
+  width: 100vw;
+  height: 62px;
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  margin: 0 auto;
+  z-index: -1;
+  background: #2B2D33;
+  display: none;
+}
+
+.other .caption36 {
+  color: #FFFFFF;
+  line-height: 46px;
+  padding-top: 60px;
+}
+
+.otherPageItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.otherArrow {
+  width: 38px;
+  height: auto;
+  display: block;
+}
+
+.otherPageItem .caption20 {
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.otherPages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  left: -10px;
+}
+
+.otherPageItem:hover {
+  transition: 0.3s;
+  background: #FEE600;
+  transform: scale(1.1);
+}
+
+.otherPageItem:hover .caption20 {
+  transition: 0.3s;
+  color: #262300;
+}
+
+.otherHuman {
+  position: absolute;
+  width: 17.6%;
+  height: auto;
+  display: block;
+  right: 6%;
+  top: 0;
+}
+
+.otherDecor1 {
+  width: 5.6%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 34.3%;
+  top: 89px;
+}
+
+.otherDecor2 {
+  width: 5.3%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -6.8%;
+  bottom: 28px;
+}
+
+.otherDecor3 {
+  width: 4.8%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -6.6%;
+  top: -33px;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 2600px) {
+  .otherBgShape2 {
+    display: block;
+    height: 5px;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .otherBgShape {
+    height: 312px;
+    top: -50px;
+  }
+}
+
+@media only screen and (max-width: 868px) {
+  .menuBlock, .block {
+    width: 94.27%;
+  }
+
+  .other {
+    width: 85.42%;
+    padding-bottom: 80px;
+  }
+
+  .otherPageItem {
+    margin-right: 28px;
+  }
+
+  .otherBgShape2 {
+    height: 198px;
+  }
+
+  .otherBgShape {
+    height: 130px;
+    top: 0;
+  }
+
+  .otherHuman {
+    width: 35.7%;
+    right: -18%;
+    top: -52px;
+  }
+
+  .otherDecor1 {
+    width: 11.3%;
+    top: 40px;
+    right: 25%;
+  }
+
+  .otherDecor2 {
+    width: 10.7%;
+    top: 80px;
+    right: -14%;
+    z-index: -1;
+  }
+
+  .otherDecor3 {
+    width: 9.8%;
+    left: -13%;
+    top: -23px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .menuBlock, .block, .other {
+    width: 93.75%;
+  }
+
+  .logo {
+    width: 61.6px;
+  }
+
+  .menuBlock {
+    height: 60px;
+    padding: 0 3.125%;
+  }
+
+  .menuBlock {
+    position: relative;
+  }
+
+  .menuBlockShown {
+    background: #2B2D33;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menuMobile {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #2B2D33;
+    z-index: 11;
+    padding-top: 14px;
+    padding-bottom: 34px;
+  }
+
+  .menuMobile .link {
+    right: 0;
+    color: #FFFFFF;
+  }
+
+  .burgerMenu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burgerImg {
+    width: 28px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    position: relative;
+    right: -10px;
+  }
+
+  .burgerImgHidden {
+    display: none;
+  }
+
+  .burgerImgCancel {
+    display: block;
+    width: 28px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    right: -10px;
+  }
+
+  .caption36 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .text16 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .caption20 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .caption16 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .other {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .other .caption36 {
+    line-height: 36px;
+  }
+
+  .otherHuman {
+    display: none;
+  }
+
+  .other .caption36 {
+    padding-top: 52px;
+  }
+
+  .otherBgShape {
+    height: 150px;
+    object-position: left top;
+  }
+
+  .otherBgShape2 {
+    height: 234px;
+  }
+
+  .otherPages {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    left: 4px;
+  }
+
+  .otherDecor1 {
+    display: none;
+  }
+
+  .otherDecor2 {
+    width: 23.3%;
+    z-index: 1;
+    top: 11px;
+    right: -15%;
+  }
+
+  .otherDecor3 {
+    width: 21.3%;
+    left: -20%;
+    top: -30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .otherDecor3 {
+    left: -15%;
+    top: -30px;
+  }
 }
