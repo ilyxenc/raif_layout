@@ -9,12 +9,17 @@ body {
   position: relative;
   min-height: 100vh;
   min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  overflow: hidden;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
 }
 
 .body {
-  overflow-x: hidden;
   width: 100%;
-  height: auto;
+  overflow-x: hidden;
 }
 
 .menuBlock {
