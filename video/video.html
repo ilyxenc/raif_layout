@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RAIF | Articles</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link type="text/css" rel="stylesheet" href="../fonts/fonts.css">
+  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <link type="text/css" rel="stylesheet" href="./video.css">
+</head>
+
+<body>
+  <div class="body">
+    <div class="menuBlock animationFadeInDown">
+      <div class="logoBlock">
+        <img id="logo1" class="logo" src="../images/logo-2.png" alt="" />
+        <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
+      </div>
+      <div class="menu">
+        <a class="link" href="#">Главная</a>
+        <a class="link" href="#">О фестивале</a>
+        <a class="link" href="#">Программа</a>
+        <a class="link linkLast" href="#">Интересное</a>
+      </div>
+      <div class="burgerMenu" data-open="0">
+        <img class="burgerImg" src="../images/burger.svg" alt="" />
+        <img class="burgerImgHidden" src="../images/cancel.svg" alt="" />
+      </div>
+    </div>
+    <div id="menuMobile" class="menu menuMobileHidden">
+      <a class="link" href="#">Главная</a>
+      <a class="link" href="#">О фестивале</a>
+      <a class="link" href="#">Программа</a>
+      <a class="link linkLast" href="#">Интересное</a>
+    </div>
+    <img class="menuBg" src="../images/menu-bg.svg" alt="" />
+    <script type="text/javascript">
+      let logo = document.querySelector(".logoBlock"),
+        menuBlock = document.querySelector("#menuMobile"),
+        menu = document.querySelector(".burgerMenu"),
+        menuBlockAll = document.querySelector(".menuBlock");
+
+      menu.addEventListener("click", () => {
+        if (menu.dataset.open == 0) {
+          menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
+          menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
+          menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
+          menuBlock.classList = "menu menuMobile";
+          logo.querySelector("#logo1").classList = "logo logoHidden";
+          logo.querySelector("#logo2").classList = "logo";
+          menu.dataset.open = 1;
+        } else {
+          menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
+          menu.querySelector(".burgerImg").classList = "burgerImg";
+          menuBlockAll.classList = "menuBlock animationFadeInDown";
+          menuBlock.classList = "menu menuMobileHidden";
+          logo.querySelector("#logo1").classList = "logo";
+          logo.querySelector("#logo2").classList = "logo logoHidden";
+          menu.dataset.open = 0;
+        }
+      });
+    </script>
+    <div class="block">
+      <p class="caption36 videoCaption36">
+        Рубрика вопросы&nbsp;к…
+      </p>
+      <p class="text16">
+        Смотрите какие классные профессии у нас есть, вы можете изучать роли, общаться с людьми и узнавать детали о профессиях перед откликом
+      </p>
+
+      <img class="videoDecor7" src="../images/decor/decor-5.svg" alt="" />
+    </div>
+    <div class="block videoBlock">
+      <div class="videoItem">
+        <div class="videoItemImgBlock">
+          <iframe src="https://player.vimeo.com/video/529299559?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" class="video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+            title="P1010708.MP4"></iframe>
+
+          <img class="videoDecor3" src="../images/decor/decor-8.svg" alt="" />
+          <img class="videoDecor4" src="../images/decor/decor-4.svg" alt="" />
+        </div>
+
+        <p class="caption20 videoCaption20">
+          Relationship manager
+        </p>
+        <p class="caption16 videoCaption16">
+          Алексей Марков
+        </p>
+        <p class="text16">
+          Занимается сопровождение клиентов (юр лиц) после того, как они купили услугу (зарплатный проект). Они решают насущные вопросы, решают проблемы, общаются, могут что-то продать дополнительно, если клиенту это нужно.
+        </p>
+      </div>
+      <div class="videoItem">
+        <div class="videoItemImgBlock">
+          <iframe src="https://player.vimeo.com/video/529299559?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" class="video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+            title="P1010708.MP4"></iframe>
+
+          <img class="videoDecor5" src="../images/decor/decor-1.svg" alt="" />
+          <img class="videoDecor6" src="../images/decor/decor-4.svg" alt="" />
+        </div>
+
+        <p class="caption20 videoCaption20">
+          Relationship manager
+        </p>
+        <p class="caption16 videoCaption16">
+          Алексей Марков
+        </p>
+        <p class="text16">
+          Занимается сопровождение клиентов (юр лиц) после того, как они купили услугу (зарплатный проект). Они решают насущные вопросы, решают проблемы, общаются, могут что-то продать дополнительно, если клиенту это нужно.
+        </p>
+      </div>
+    </div>
+    <div class="block videoBlock">
+      <div class="videoItem">
+        <div class="videoItemImgBlock">
+          <img class="videoImg" src="../images/video/video-test.png" alt="" />
+
+          <img class="videoDecor3" src="../images/decor/decor-8.svg" alt="" />
+          <img class="videoDecor4" src="../images/decor/decor-4.svg" alt="" />
+        </div>
+
+        <p class="caption20 videoCaption20">
+          Relationship manager
+        </p>
+        <p class="caption16 videoCaption16">
+          Алексей Марков
+        </p>
+        <p class="text16">
+          Занимается сопровождение клиентов (юр лиц) после того, как они купили услугу (зарплатный проект). Они решают насущные вопросы, решают проблемы, общаются, могут что-то продать дополнительно, если клиенту это нужно.
+        </p>
+      </div>
+      <div class="videoItem">
+        <div class="videoItemImgBlock">
+          <div class="videoDate">
+            <div>
+              <p class="text16">
+                Будет доступно
+              </p>
+              <p class="caption20">
+                02 апреля 2021 в 12:00
+              </p>
+            </div>
+          </div>
+          <img class="videoImg" src="../images/video/video-test.png" alt="" />
+
+          <img class="videoDecor5" src="../images/decor/decor-1.svg" alt="" />
+          <img class="videoDecor6" src="../images/decor/decor-4.svg" alt="" />
+        </div>
+
+        <p class="caption20 videoCaption20">
+          Relationship manager
+        </p>
+        <p class="caption16 videoCaption16">
+          Алексей Марков
+        </p>
+        <p class="text16">
+          Занимается сопровождение клиентов (юр лиц) после того, как они купили услугу (зарплатный проект). Они решают насущные вопросы, решают проблемы, общаются, могут что-то продать дополнительно, если клиенту это нужно.
+        </p>
+      </div>
+    </div>
+    <div class="block videoBlock">
+      <div class="videoItem">
+        <div class="videoItemImgBlock">
+          <div class="videoDate">
+            <div>
+              <p class="text16">
+                Будет доступно
+              </p>
+              <p class="caption20">
+                02 апреля 2021 в 12:00
+              </p>
+            </div>
+          </div>
+          <img class="videoImg" src="../images/video/video-test.png" alt="" />
+
+          <img class="videoDecor3" src="../images/decor/decor-8.svg" alt="" />
+          <img class="videoDecor4" src="../images/decor/decor-4.svg" alt="" />
+        </div>
+
+        <p class="caption20 videoCaption20">
+          Relationship manager
+        </p>
+        <p class="caption16 videoCaption16">
+          Алексей Марков
+        </p>
+        <p class="text16">
+          Занимается сопровождение клиентов (юр лиц) после того, как они купили услугу (зарплатный проект). Они решают насущные вопросы, решают проблемы, общаются, могут что-то продать дополнительно, если клиенту это нужно.
+        </p>
+      </div>
+      <div class="videoItem">
+        <div class="videoItemImgBlock">
+          <div class="videoDate">
+            <div>
+              <p class="text16">
+                Будет доступно
+              </p>
+              <p class="caption20">
+                02 апреля 2021 в 12:00
+              </p>
+            </div>
+          </div>
+          <img class="videoImg" src="../images/video/video-test.png" alt="" />
+
+          <img class="videoDecor5" src="../images/decor/decor-1.svg" alt="" />
+          <img class="videoDecor6" src="../images/decor/decor-4.svg" alt="" />
+        </div>
+
+        <p class="caption20 videoCaption20">
+          Relationship manager
+        </p>
+        <p class="caption16 videoCaption16">
+          Алексей Марков
+        </p>
+        <p class="text16">
+          Занимается сопровождение клиентов (юр лиц) после того, как они купили услугу (зарплатный проект). Они решают насущные вопросы, решают проблемы, общаются, могут что-то продать дополнительно, если клиенту это нужно.
+        </p>
+      </div>
+
+      <img class="videoDecor10" src="../images/decor/decor-6.svg" alt="" />
+
+      <img class="videoDecor8" src="../images/decor/decor-9.svg" alt="" />
+      <img class="videoDecor9" src="../images/decor/decor-4.svg" alt="" />
+      <div class="videoBgShape"></div>
+    </div>
+    <div class="block">
+      <p class="caption36 videoCaption36Bottom">
+        Стоит посмотреть
+      </p>
+    </div>
+    <div class="block videoBlock videoBlock2">
+      <img class="videoHuman1" src="../images/video/human-1.png" alt="" />
+
+      <div class="videoItem videoItem2">
+        <div class="videoItemImgBlock">
+          <img class="videoImg" src="../images/video/video-test.png" alt="" />
+
+          <img class="videoDecor3" src="../images/decor/decor-8.svg" alt="" />
+          <img class="videoDecor4" src="../images/decor/decor-4.svg" alt="" />
+        </div>
+
+        <p class="caption20 videoCaption20">
+          Relationship manager
+        </p>
+        <p class="caption16 videoCaption16">
+          Алексей Марков
+        </p>
+        <p class="text16">
+          Занимается сопровождение клиентов (юр лиц) после того, как они купили услугу (зарплатный проект). Они решают насущные вопросы, решают проблемы, общаются, могут что-то продать дополнительно, если клиенту это нужно.
+        </p>
+      </div>
+
+      <img class="videoHuman2" src="../images/video/human-2.png" alt="" />
+
+      <img class="videoDecor1" src="../images/decor/decor-1.svg" alt="" />
+      <img class="videoDecor2" src="../images/decor/decor-7.svg" alt="" />
+    </div>
+    <img class="videoHuman3" src="../images/video/human-3.png" alt="" />
+    <script type="text/javascript">
+      let video = document.querySelectorAll(".video"),
+        videoBlock = document.querySelectorAll(".videoItemImgBlock");
+
+
+      video.forEach((item, i) => {
+        item.style.height = item.offsetWidth / 16 * 9 + "px";
+      });
+      videoBlock.forEach((item, i) => {
+        item.style.height = item.offsetWidth / 16 * 9 + "px";
+      });
+
+
+      window.addEventListener("resize", () => {
+        video.forEach((item, i) => {
+          item.style.height = item.offsetWidth / 16 * 9 + "px";
+        });
+        videoBlock.forEach((item, i) => {
+          item.style.height = item.offsetWidth / 16 * 9 + "px";
+        });
+      });
+    </script>
+    <div class="block other">
+      <p class="caption36">
+        А еще у нас есть<br />интересные
+      </p>
+      <div class="otherPages">
+        <a class="otherPageItem otherPageItemFirst" href="#">
+          <p class="caption20">
+            Подкасты
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Вебинары
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Статьи
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+      </div>
+      <img class="otherHuman" src="../images/other-human.png" alt="" />
+      <img class="otherDecor1" src="../images/decor/decor-1.svg" alt="" />
+      <img class="otherDecor2" src="../images/decor/decor-2.svg" alt="" />
+      <img class="otherDecor3" src="../images/decor/decor-3.svg" alt="" />
+      <img class="otherBgShape" src="../images/other-bg.svg" alt="" />
+      <div class="otherBgShape2"></div>
+    </div>
+  </div>
+</body>
+
+</html>
