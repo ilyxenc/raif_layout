@@ -401,7 +401,7 @@
   padding: 16px 20px;
   width: 100%;
   box-sizing: border-box;
-  background: #F4F4F5;
+  background: rgba(43, 45, 51, 0.05);
   display: none;
   position: relative;
   margin-bottom: 1px;
