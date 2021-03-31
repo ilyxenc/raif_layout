@@ -417,11 +417,16 @@
         webinarDescription = document.querySelectorAll(".webinarLinkDescriptionItem");
 
       webinarLink.forEach((item, i) => {
+        // console.log('hi');
         item.addEventListener("click", (e) => {
+          webinarLink.forEach((image, i) => {
+            image.querySelector(".webinarLinkItemImg").classList = "webinarLinkItemImg";
+          });
           webinarDescription.forEach((desc, i) => {
             desc.dataset.webinar == item.dataset.webinar ? (desc.classList == "webinarLinkDescriptionItem" ? (desc.classList = "webinarLinkDescriptionItem webinarLinkDescriptionItemShow", item.querySelector(".webinarLinkItemImg").classList = "webinarLinkItemImg webinarRotateImage") : (desc.classList = "webinarLinkDescriptionItem", item.querySelector(".webinarLinkItemImg").classList = "webinarLinkItemImg")) : (desc.classList = "webinarLinkDescriptionItem");
           });
         });
+
       });
     </script>
     <div class="block webinarIframeCaption">
