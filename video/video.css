@@ -169,16 +169,6 @@
   z-index: -1;
 }
 
-.videoDecor7 {
-  width: 5.4%;
-  height: auto;
-  display: block;
-  position: absolute;
-  right: -6.9%;
-  top: 50px;
-  z-index: -1;
-}
-
 .videoDecor8 {
   width: 6.9%;
   height: auto;
@@ -277,12 +267,6 @@
     right: -14%;
     bottom: -260px;
   }
-
-  .videoDecor7 {
-    width: 12%;
-    right: -13.5%;
-    top: -35px;
-  }
 }
 
 @media only screen and (max-width: 668px) {
@@ -331,7 +315,7 @@
     width: 17.3%;
   }
 
-  .videoDecor1, .videoDecor7, .videoDecor8, .videoDecor9 {
+  .videoDecor1, .videoDecor8, .videoDecor9 {
     display: none;
   }
 }
