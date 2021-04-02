@@ -1,0 +1,528 @@
+.podcastsBlock {
+  margin-bottom: 80px;
+}
+
+.podcastsBlockFirst {
+  margin-top: 40px;
+}
+
+.podcastsBlockLast {
+  margin-bottom: 0;
+}
+
+.podcastsDateItems {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.podcastsDateItem {
+  width: 22.74%;
+  margin-right: 3%;
+  margin-top: 16px;
+}
+
+.podcastsDateItemImgBlock {
+  width: 100%;
+  position: relative;
+}
+
+.podcastsDateItemImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.podcastsDateItemDate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.podcastsDateItemDate .text16 {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 8px;
+}
+
+.podcastsDateItem .text16 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.podcastsDateItemDate p {
+  text-align: center;
+}
+
+.podcastsDateItemDate, .podcastsDateItemImg, .podcastsDateItemImgBlock, .podcastsImagesBlockImg {
+  border-radius: 12px;
+}
+
+.podcastsDateCaption20 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.podcastsDescriptionText18 {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 12px;
+}
+
+.podcastsImagesBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.podcastsImagesBlockImg {
+  width: 22.74%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-top: 24px;
+  margin-right: 3%;
+}
+
+.podcastsInfoBlock {
+  margin-top: 40px;
+}
+
+.podcastsInfoBlockLeftNamesImg {
+  width: 16px;
+  height: auto;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.podcastsInfoBlockLeftNames .text {
+  font-family: "Futura_Book";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.podcastsInfoBlockLeftNames .caption16 {
+  display: flex;
+  align-items: center;
+}
+
+.podcastsInfoBlockLeftNames a {
+  display: flex;
+  align-items: center;
+}
+
+.podcastsInfoBlockLeftNames a:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.podcastsInfoBlockLeftNames {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.podcastsInfoBlockLeftNamesItem {
+  margin-top: 8px;
+  margin-right: 30px;
+}
+
+.podcastsInfoBlockRight .text16 {
+  margin-top: 8px;
+}
+
+.podcastsInfoBlockLeft, .podcastsInfoBlockRight {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.podcastsInfoBlockRight {
+  margin-left: 42px;
+}
+
+.podcastsExample {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  background: #F2F2F2;
+}
+
+.podcastsBlockExample {
+  width: 100%;
+  margin-top: 24px;
+  position: relative;
+}
+
+.podcastsDecor1 {
+  width: 16.6%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -6.4%;
+  top: -12px;
+  z-index: -1;
+}
+
+.podcastsDecor2 {
+  width: 11.9%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -5.4%;
+  bottom: 16px;
+  z-index: -1;
+}
+
+.podcastsDecor3 {
+  width: 3.7%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 6%;
+  bottom: -17px;
+  z-index: -1;
+}
+
+.podcastsDecor4 {
+  width: 2.7%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -0.75%;
+  top: -11px;
+  z-index: -1;
+}
+
+.podcastsDecor5 {
+  width: 6.6%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -1.8%;
+  top: 4px;
+  z-index: -1;
+}
+
+.podcastsDecor6 {
+  width: 3.8%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 9%;
+  top: -20px;
+  z-index: -1;
+}
+
+.podcastsBgShape {
+  width: 100vw;
+  height: 548px;
+  background: #FFFFFF;
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: 115px;
+  margin: 0 auto;
+  transform-origin: 50% 0%;
+  transform: skewY(-8deg);
+  z-index: -2;
+}
+
+.podcastsDecor7 {
+  width: 5.4%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -6.9%;
+  bottom: -300px;
+  z-index: -1;
+}
+
+.podcastsDecor8 {
+  width: 6.9%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -7.7%;
+  top: -30px;
+  z-index: -1;
+}
+
+.podcastsDecor9 {
+  width: 2.7%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -5%;
+  top: 20px;
+  z-index: -1;
+}
+
+.podcastsDecor10 {
+  width: 2.7%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 18.2%;
+  top: -14px;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+
+.podcastsDecor11 {
+  width: 6.5%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 22.5%;
+  top: 84px;
+  z-index: -1;
+}
+
+.podcastsDecor12 {
+  width: 3.8%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -1.9%;
+  top: 163px;
+  z-index: -1;
+}
+
+.podcastsDecor13 {
+  width: 32.07%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 8.6%;
+  top: 24px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 868px) {
+  .podcastsDateItem {
+    width: 31.5%;
+    margin-right: 0;
+  }
+
+  .podcastsDateItems {
+    justify-content: space-between;
+  }
+
+  .podcastsDateItemDate div {
+    width: 69%;
+  }
+
+  .podcastsImagesBlockImg {
+    width: 31.5%;
+  }
+
+  .podcastsExample {
+    height: 38px;
+  }
+
+  .podcastsBgShape {
+    top: 50px;
+    height: 686px;
+  }
+
+  .podcastsDecor3 {
+    width: 6.9%;
+    left: 11%;
+  }
+
+  .podcastsDecor4 {
+    width: 5%;
+    right: -1.5%;
+  }
+
+  .podcastsDecor5 {
+    width: 12%;
+    left: -3.3%;
+    top: -8px;
+  }
+
+  .podcastsDecor6 {
+    width: 6.9%;
+    right: 16.6%;
+  }
+
+  .podcastsDecor7 {
+    width: 9.9%;
+    left: -11.3%;
+    bottom: -303px;
+  }
+
+  .podcastsDecor8 {
+    width: 11.9%;
+    right: -13.3%;
+    top: -45px;
+  }
+
+  .podcastsDecor9 {
+    width: 5%;
+    left: -6.3%;
+  }
+
+  .podcastsDecor10 {
+    width: 5%;
+    left: 33.4%;
+    top: -15px;
+  }
+
+  .podcastsDecor11 {
+    width: 11.9%;
+    right: 0;
+    top: 84px;
+  }
+
+  .podcastsDecor12 {
+    display: none;
+  }
+
+  .podcastsDecor13 {
+    width: 50%;
+    right: -30%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .podcastsDateItem {
+    width: 100%;
+    margin: 16px auto;
+  }
+
+  .podcastsDateItems {
+    flex-direction: column;
+  }
+
+  .podcastsDateItemDate div {
+    width: 135px;
+  }
+
+  .podcastsBlock {
+    margin-bottom: 60px;
+  }
+
+  .podcastsDateItem:nth-last-child(1) {
+    margin: 16px auto 0;
+  }
+
+  .podcastsExample {
+    height: 60px;
+  }
+
+  .podcastsImagesBlockImg {
+    width: 59%;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+
+  .podcastsImagesBlock {
+    /* width: 106.666666%; */
+    width: 100%;
+    padding: 0 3.333333%;
+    left: -3.333333%;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .podcastsImagesBlock::-webkit-scrollbar {
+    display: none;
+  }
+
+  .podcastsDecor13 {
+    display: none;
+  }
+
+  .podcastsInfoBlock {
+    margin-top: 32px;
+  }
+
+  .podcastsInfoBlockRight {
+    margin: 16px 0 0 0;
+  }
+
+  .podcastsInfoBlockLeftNames {
+    flex-direction: column;
+  }
+
+  .podcastsInfoBlockLeftNames .text {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .podcastsDescriptionText18 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .podcastsDecor1 {
+    width: 16.7%;
+    left: -6.7%;
+  }
+
+  .podcastsDecor2 {
+    width: 12%;
+    right: -5.3%;
+  }
+
+  .podcastsDecor9 {
+    display: none;
+  }
+
+  .podcastsDecor10 {
+    width: 12%;
+    left: 62%;
+    top: -17px;
+  }
+
+  .podcastsDecor11 {
+    width: 28.7%;
+    right: -14.3%;
+    top: 103px;
+  }
+
+  .podcastsDecor3 {
+    width: 16.7%;
+    left: 26.7%;
+  }
+
+  .podcastsDecor4 {
+    width: 12%;
+    right: -3.3%;
+  }
+
+  .podcastsDecor5 {
+    width: 29%;
+    left: -8%;
+    top: 14px;
+  }
+
+  .podcastsDecor6 {
+    width: 16.7%;
+    right: 40%;
+  }
+
+  .podcastsBgShape {
+    height: 876px;
+    top: 20px;
+  }
+
+  .podcastsDecor7, .podcastsDecor8 {
+    display: none;
+  }
+}

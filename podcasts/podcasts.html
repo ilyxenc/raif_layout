@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RAIF | Podcasts</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link type="text/css" rel="stylesheet" href="../fonts/fonts.css">
+  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <link type="text/css" rel="stylesheet" href="./podcasts.css">
+</head>
+
+<body>
+  <div class="body">
+    <div class="menuBlock animationFadeInDown">
+      <div class="logoBlock">
+        <img id="logo1" class="logo" src="../images/logo-2.png" alt="" />
+        <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
+      </div>
+      <div class="menu">
+        <a class="link" href="#">Главная</a>
+        <a class="link" href="#">О фестивале</a>
+        <a class="link" href="#">Программа</a>
+        <a class="link linkLast" href="#">Интересное</a>
+      </div>
+      <div class="burgerMenu" data-open="0">
+        <img class="burgerImg" src="../images/burger.svg" alt="" />
+        <img class="burgerImgHidden" src="../images/cancel.svg" alt="" />
+      </div>
+      <img class="menuDecor" src="../images/decor/decor-5.svg" alt="" />
+    </div>
+    <div id="menuMobile" class="menu menuMobileHidden">
+      <a class="link" href="#">Главная</a>
+      <a class="link" href="#">О фестивале</a>
+      <a class="link" href="#">Программа</a>
+      <a class="link linkLast" href="#">Интересное</a>
+    </div>
+    <img class="menuBg animationFadeInDown" src="../images/menu-bg.svg" alt="" />
+    <script type="text/javascript">
+      let logo = document.querySelector(".logoBlock"),
+        menuBlock = document.querySelector("#menuMobile"),
+        menu = document.querySelector(".burgerMenu"),
+        menuBlockAll = document.querySelector(".menuBlock");
+
+      menu.addEventListener("click", () => {
+        if (menu.dataset.open == 0) {
+          menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
+          menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
+          menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
+          menuBlock.classList = "menu menuMobile";
+          logo.querySelector("#logo1").classList = "logo logoHidden";
+          logo.querySelector("#logo2").classList = "logo";
+          menu.dataset.open = 1;
+        } else {
+          menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
+          menu.querySelector(".burgerImg").classList = "burgerImg";
+          menuBlockAll.classList = "menuBlock animationFadeInDown";
+          menuBlock.classList = "menu menuMobileHidden";
+          logo.querySelector("#logo1").classList = "logo";
+          logo.querySelector("#logo2").classList = "logo logoHidden";
+          menu.dataset.open = 0;
+        }
+      });
+    </script>
+
+    <div class="block podcastsBlockFirst">
+      <p class="caption36">
+        Подкасты
+      </p>
+    </div>
+
+    <div class="block podcastsBlock podcastsDateItems">
+      <div class="podcastsDateItem">
+        <div class="podcastsDateItemImgBlock">
+          <img class="podcastsDateItemImg" src="../images/podcasts/podcasts-test.png" alt="" />
+
+          <img class="podcastsDecor1" src="../images/decor/decor-13.svg" alt="">
+          <img class="podcastsDecor2" src="../images/decor/decor-12.svg" alt="">
+        </div>
+        <p class="caption20 podcastsDateCaption20">
+          Наименование подкаста
+        </p>
+        <p class="text16">
+          Краткое превью описание подкаста в две-три строки для понимания примерного содержания
+        </p>
+      </div>
+      <div class="podcastsDateItem">
+        <div class="podcastsDateItemImgBlock">
+          <div class="podcastsDateItemDate">
+            <div>
+              <p class="text16">
+                Будет доступно
+              </p>
+              <p class="caption20">
+                02 апреля 2021 в 12:00
+              </p>
+            </div>
+          </div>
+          <img class="podcastsDateItemImg" src="../images/podcasts/podcasts-test.png" alt="" />
+
+          <img class="podcastsDecor1" src="../images/decor/decor-13.svg" alt="">
+          <img class="podcastsDecor2" src="../images/decor/decor-12.svg" alt="">
+        </div>
+        <p class="caption20 podcastsDateCaption20">
+          Наименование подкаста
+        </p>
+        <p class="text16">
+          Краткое превью описание подкаста в две-три строки для понимания примерного содержания
+        </p>
+      </div>
+      <div class="podcastsDateItem">
+        <div class="podcastsDateItemImgBlock">
+          <div class="podcastsDateItemDate">
+            <div>
+              <p class="text16">
+                Будет доступно
+              </p>
+              <p class="caption20">
+                02 апреля 2021 в 12:00
+              </p>
+            </div>
+          </div>
+          <img class="podcastsDateItemImg" src="../images/podcasts/podcasts-test.png" alt="" />
+
+          <img class="podcastsDecor1" src="../images/decor/decor-13.svg" alt="">
+          <img class="podcastsDecor2" src="../images/decor/decor-12.svg" alt="">
+        </div>
+        <p class="caption20 podcastsDateCaption20">
+          Наименование подкаста
+        </p>
+        <p class="text16">
+          Краткое превью описание подкаста в две-три строки для понимания примерного содержания
+        </p>
+      </div>
+    </div>
+
+    <div class="block podcastsBlock">
+      <p class="caption36">
+        Podkast Name
+      </p>
+      <p class="text18 podcastsDescriptionText18">
+        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+        генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+        восприятия.
+      </p>
+      <div class="podcastsImagesBlock">
+        <img class="podcastsImagesBlockImg" src="../images/podcasts/podcasts-test-2.png" alt="" />
+        <img class="podcastsImagesBlockImg" src="../images/podcasts/podcasts-test-2.png" alt="" />
+        <div>&nbsp;</div>
+
+        <img class="podcastsDecor13" src="../images/human.svg" alt="">
+      </div>
+      <div class="podcastsInfoBlock">
+        <div class="podcastsInfoBlockLeft">
+          <p class="caption20">
+            Ведущие:
+          </p>
+          <div class="podcastsInfoBlockLeftNames">
+            <div class="podcastsInfoBlockLeftNamesItem">
+              <p class="caption16">
+                Владимир&nbsp;Химаныч <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/f.svg" alt="" /></a> <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/i.svg" alt="" /></a>
+              </p>
+              <p class="text">
+                Sales Manager
+              </p>
+            </div>
+            <div class="podcastsInfoBlockLeftNamesItem">
+              <p class="caption16">
+                Анна&nbsp;Балашова <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/i.svg" alt="" /></a>
+              </p>
+              <p class="text">
+                Sales Manager
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="podcastsInfoBlockRight">
+          <p class="caption20">
+            Длительность:
+          </p>
+          <p class="text16">
+            38 минут
+          </p>
+        </div>
+      </div>
+      <div class="podcastsBlockExample">
+        <div class="podcastsExample"></div>
+
+        <img class="podcastsDecor3" src="../images/decor/decor-4.svg" alt="" />
+        <img class="podcastsDecor4" src="../images/decor/decor-17.svg" alt="" />
+      </div>
+
+      <img class="podcastsDecor9" src="../images/decor/decor-7.svg" alt="">
+      <img class="podcastsDecor10" src="../images/decor/decor-3.svg" alt="">
+      <img class="podcastsDecor11" src="../images/decor/decor-19.svg" alt="">
+      <img class="podcastsDecor12" src="../images/decor/decor-4.svg" alt="">
+    </div>
+
+    <div class="block podcastsBlock">
+      <p class="caption36">
+        Podkast Name
+      </p>
+      <p class="text18 podcastsDescriptionText18">
+        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+        генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+        восприятия.
+      </p>
+      <div class="podcastsImagesBlock">
+        <img class="podcastsImagesBlockImg" src="../images/podcasts/podcasts-test-2.png" alt="" />
+        <img class="podcastsImagesBlockImg" src="../images/podcasts/podcasts-test-2.png" alt="" />
+        <div>&nbsp;</div>
+      </div>
+      <div class="podcastsInfoBlock">
+        <div class="podcastsInfoBlockLeft">
+          <p class="caption20">
+            Ведущие:
+          </p>
+          <div class="podcastsInfoBlockLeftNames">
+            <div class="podcastsInfoBlockLeftNamesItem">
+              <p class="caption16">
+                Владимир&nbsp;Химаныч <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/f.svg" alt="" /></a> <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/i.svg" alt="" /></a>
+              </p>
+              <p class="text">
+                Sales Manager
+              </p>
+            </div>
+            <div class="podcastsInfoBlockLeftNamesItem">
+              <p class="caption16">
+                Анна&nbsp;Балашова <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/i.svg" alt="" /></a>
+              </p>
+              <p class="text">
+                Sales Manager
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="podcastsInfoBlockRight">
+          <p class="caption20">
+            Длительность:
+          </p>
+          <p class="text16">
+            38 минут
+          </p>
+        </div>
+      </div>
+      <div class="podcastsBlockExample">
+        <div class="podcastsExample"></div>
+
+        <img class="podcastsDecor5" src="../images/decor/decor-18.svg" alt="" />
+        <img class="podcastsDecor6" src="../images/decor/decor-13.svg" alt="" />
+      </div>
+
+      <img class="podcastsDecor7" src="../images/decor/decor-4.svg" alt="">
+      <img class="podcastsDecor8" src="../images/decor/decor-9.svg" alt="">
+      <div class="podcastsBgShape"></div>
+    </div>
+
+    <div class="block podcastsBlock">
+      <p class="caption36">
+        Podkast Name
+      </p>
+      <p class="text18 podcastsDescriptionText18">
+        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+        генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+        восприятия.
+      </p>
+      <div class="podcastsImagesBlock">
+        <img class="podcastsImagesBlockImg" src="../images/podcasts/podcasts-test-2.png" alt="" />
+        <img class="podcastsImagesBlockImg" src="../images/podcasts/podcasts-test-2.png" alt="" />
+        <div>&nbsp;</div>
+      </div>
+      <div class="podcastsInfoBlock">
+        <div class="podcastsInfoBlockLeft">
+          <p class="caption20">
+            Ведущие:
+          </p>
+          <div class="podcastsInfoBlockLeftNames">
+            <div class="podcastsInfoBlockLeftNamesItem">
+              <p class="caption16">
+                Владимир&nbsp;Химаныч <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/f.svg" alt="" /></a> <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/i.svg" alt="" /></a>
+              </p>
+              <p class="text">
+                Sales Manager
+              </p>
+            </div>
+            <div class="podcastsInfoBlockLeftNamesItem">
+              <p class="caption16">
+                Анна&nbsp;Балашова <a href="#"><img class="podcastsInfoBlockLeftNamesImg" src="../images/i.svg" alt="" /></a>
+              </p>
+              <p class="text">
+                Sales Manager
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="podcastsInfoBlockRight">
+          <p class="caption20">
+            Длительность:
+          </p>
+          <p class="text16">
+            38 минут
+          </p>
+        </div>
+      </div>
+      <div class="podcastsBlockExample">
+        <div class="podcastsExample"></div>
+
+        <img class="podcastsDecor3" src="../images/decor/decor-4.svg" alt="" />
+        <img class="podcastsDecor4" src="../images/decor/decor-17.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="block other">
+      <p class="caption36">
+        А еще у нас есть<br />интересные
+      </p>
+      <div class="otherPages">
+        <a class="otherPageItem otherPageItemFirst" href="#">
+          <p class="caption20">
+            Подкасты
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Видео
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Статьи
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+      </div>
+      <img class="otherHuman" src="../images/other-human.png" alt="" />
+      <img class="otherDecor1" src="../images/decor/decor-1.svg" alt="" />
+      <img class="otherDecor2" src="../images/decor/decor-2.svg" alt="" />
+      <img class="otherDecor3" src="../images/decor/decor-3.svg" alt="" />
+      <img class="otherBgShape" src="../images/other-bg.svg" alt="" />
+      <div class="otherBgShape2"></div>
+    </div>
+  </div>
+</body>
+
+</html>
