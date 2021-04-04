@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RAIF | Articles</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link type="text/css" rel="stylesheet" href="../fonts/fonts.css">
+  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <link type="text/css" rel="stylesheet" href="./articles.css">
+</head>
+
+<body>
+  <div class="body">
+    <div id="height1">
+      <div class="menuBlock animationFadeInDown">
+        <div class="logoBlock">
+          <img id="logo1" class="logo" src="../images/logo-2.png" alt="" />
+          <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
+        </div>
+        <div class="menu">
+          <a class="link" href="#">Главная</a>
+          <a class="link" href="#">О фестивале</a>
+          <a class="link" href="#">Программа</a>
+          <a class="link linkLast" href="#">Интересное</a>
+        </div>
+        <div class="burgerMenu" data-open="0">
+          <img class="burgerImg" src="../images/burger.svg" alt="" />
+          <img class="burgerImgHidden" src="../images/cancel.svg" alt="" />
+        </div>
+        <img class="menuDecor" src="../images/decor/decor-5.svg" alt="" />
+      </div>
+      <div id="menuMobile" class="menu menuMobileHidden">
+        <a class="link" href="#">Главная</a>
+        <a class="link" href="#">О фестивале</a>
+        <a class="link" href="#">Программа</a>
+        <a class="link linkLast" href="#">Интересное</a>
+      </div>
+      <img class="menuBg animationFadeInDown" src="../images/menu-bg.svg" alt="" />
+      <script type="text/javascript">
+        let logo = document.querySelector(".logoBlock"),
+          menuBlock = document.querySelector("#menuMobile"),
+          menu = document.querySelector(".burgerMenu"),
+          menuBlockAll = document.querySelector(".menuBlock");
+
+        menu.addEventListener("click", () => {
+          if (menu.dataset.open == 0) {
+            menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
+            menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
+            menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
+            menuBlock.classList = "menu menuMobile";
+            logo.querySelector("#logo1").classList = "logo logoHidden";
+            logo.querySelector("#logo2").classList = "logo";
+            menu.dataset.open = 1;
+          } else {
+            menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
+            menu.querySelector(".burgerImg").classList = "burgerImg";
+            menuBlockAll.classList = "menuBlock animationFadeInDown";
+            menuBlock.classList = "menu menuMobileHidden";
+            logo.querySelector("#logo1").classList = "logo";
+            logo.querySelector("#logo2").classList = "logo logoHidden";
+            menu.dataset.open = 0;
+          }
+        });
+      </script>
+
+      <div class="block">
+        <p class="caption36 articlesCaption36">
+          Статьи
+        </p>
+      </div>
+
+      <div class="block articlesBlock">
+        <div class="articlesItem">
+          <div class="articlesDateItemImgBlock">
+            <img class="articlesDateItemImg" src="../images/articles/articles-test.png" alt="" />
+
+            <img class="articlesDecor1" src="../images/decor/decor-2.svg" alt="">
+            <img class="articlesDecor2" src="../images/decor/decor-10.svg" alt="">
+          </div>
+          <p class="caption20 articlesDateCaption20">
+            Наименование подкаста
+          </p>
+          <p class="text16">
+            Краткое превью описание подкаста в две-три строки для понимания примерного содержания
+          </p>
+        </div>
+        <div class="articlesItem">
+          <div class="articlesDateItemImgBlock">
+            <div class="articlesDateItemDate">
+              <div>
+                <p class="text16">
+                  Будет доступно
+                </p>
+                <p class="caption20">
+                  02 апреля 2021 в 12:00
+                </p>
+              </div>
+            </div>
+            <img class="articlesDateItemImg" src="../images/articles/articles-test.png" alt="" />
+
+            <img class="articlesDecor3" src="../images/decor/decor-16.svg" alt="">
+            <img class="articlesDecor4" src="../images/decor/decor-4.svg" alt="">
+          </div>
+          <p class="caption20 articlesDateCaption20">
+            Наименование подкаста
+          </p>
+          <p class="text16">
+            Краткое превью описание подкаста в две-три строки для понимания примерного содержания
+          </p>
+        </div>
+        <div class="articlesItem">
+          <div class="articlesDateItemImgBlock">
+            <div class="articlesDateItemDate">
+              <div>
+                <p class="text16">
+                  Будет доступно
+                </p>
+                <p class="caption20">
+                  02 апреля 2021 в 12:00
+                </p>
+              </div>
+            </div>
+            <img class="articlesDateItemImg" src="../images/articles/articles-test.png" alt="" />
+
+            <img class="articlesDecor1" src="../images/decor/decor-2.svg" alt="">
+            <img class="articlesDecor2" src="../images/decor/decor-10.svg" alt="">
+          </div>
+          <p class="caption20 articlesDateCaption20">
+            Наименование подкаста
+          </p>
+          <p class="text16">
+            Краткое превью описание подкаста в две-три строки для понимания примерного содержания
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="articlesBlockEmpty">
+
+    </div>
+
+    <div id="height2" class="block other">
+      <p class="caption36">
+        А еще у нас есть<br />интересные
+      </p>
+      <div class="otherPages">
+        <a class="otherPageItem otherPageItemFirst" href="#">
+          <p class="caption20">
+            Подкасты
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Вебинары
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Статьи
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+      </div>
+      <img class="otherHuman" src="../images/other-human.png" alt="" />
+      <img class="otherDecor1" src="../images/decor/decor-1.svg" alt="" />
+      <img class="otherDecor2" src="../images/decor/decor-2.svg" alt="" />
+      <img class="otherDecor3" src="../images/decor/decor-3.svg" alt="" />
+      <img class="otherBgShape" src="../images/other-bg.svg" alt="" />
+      <div class="otherBgShape2"></div>
+    </div>
+    <script type="text/javascript">
+      const articlesOtherToBottom = () => {
+        let innerBodyHeight = document.querySelector("#height1").offsetHeight + document.querySelector("#height2").offsetHeight + parseFloat(window.getComputedStyle(document.querySelector("#height2")).getPropertyValue('margin-top')),
+          body = document.body,
+          html = document.documentElement,
+          outerBodyHeight = window.innerHeight;
+        document.documentElement.style.setProperty('--articlesHeightEmpty', `${outerBodyHeight - innerBodyHeight}px`);
+      };
+      articlesOtherToBottom();
+      window.addEventListener("load", function() {
+        articlesOtherToBottom();
+      });
+      window.addEventListener('resize', articlesOtherToBottom);
+    </script>
+  </div>
+</body>
+
+</html>

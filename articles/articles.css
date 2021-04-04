@@ -1,0 +1,434 @@
+:root {
+  --articlesHeightEmpty: calc(100vh - 80px - 262px - 80px - 352px - 41px - 40px - 16px);
+}
+
+.articlesCaption36 {
+  margin: 40px auto 16px;
+}
+
+.articlesBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.articlesItem {
+  width: 31.32%;
+}
+
+.articlesDateItemImgBlock {
+  width: 100%;
+  position: relative;
+}
+
+.articlesDateItemDate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.articlesDateItemDate .text16 {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 8px;
+}
+
+.articlesDateItem .text16 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.articlesDateItemDate p {
+  text-align: center;
+}
+
+.articlesDateItemDate, .articlesDateItemImg, .articlesDateItemImgBlock, .articlesImagesBlockImg {
+  border-radius: 12px;
+}
+
+.articlesDateCaption20 {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.articlesDateItemImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.articlesBlockEmpty {
+  /* height: calc(100vh - 80px - 262px - 80px - 352px - 41px - 40px - 16px); */
+  height: var(--articlesHeightEmpty);
+}
+
+.articleBlock {
+  width: 60.555555%;
+}
+
+.articleBlock .caption36 {
+  margin: 40px auto;
+}
+
+.articleBlock .caption20 {
+  margin-bottom: 12px;
+}
+
+.articleBody {
+  background: #FFFFFF;
+}
+
+.articleMargin {
+  margin-bottom: 24px;
+}
+
+.articleBlockTop {
+  box-shadow: inset 0 0 0 1px #2B2D33;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.articleBlockTopLeft {
+  width: 29.8%;
+  background: #2B2D33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleBlockTopRight {
+  width: 70.2%;
+}
+
+.articleBlockTopImg {
+  width: 46.4%;
+  height: auto;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.articleBlockTopLeftInside {
+  padding: 16px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.articleBlockTopLeftInside div {}
+
+.articleBlockTopLeft .caption20, .articleBlockTopLeft .text16 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.articleBlockTopLeft .caption20 {
+  margin: 16px auto 4px;
+}
+
+.articleBlockTopRight .text {
+  padding: 20px;
+}
+
+.articleBlock .text {
+  font-family: "Futura_Book";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.articleBlock .text2 {
+  font-family: "Futura_Book";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text span, .text2 span {
+  font-family: "Futura_Bold";
+}
+
+.articleQuotes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 38px;
+  margin-bottom: 32px;
+}
+
+.articleTextMarginTop {
+  margin-top: 12px;
+}
+
+.articleBlock ul {
+  padding-left: 20px;
+  margin-top: 12px;
+  list-style-type: none;
+}
+
+.articleBlock li {
+  margin-top: 8px;
+  vertical-align: top;
+}
+
+.articleBlock li span {
+  width: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.articleBlock .img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin: 1px 12px 1px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.articleBlockAdvice {
+  background: #FEE600;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+
+.articleQuotesLeft, .articleQuotesRight {
+  width: 6.8%;
+}
+
+.articleQuotesLeft {
+  margin: 0 1% 0 0.6%;
+}
+
+.articleQuotesRight {
+  margin: 0 0.6% 0 1%;
+}
+
+.articleQuotes .text2 {
+  width: 78.7%;
+  margin-top: 6px;
+}
+
+.articlesDecor1 {
+  width: 16.8%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: -5.8%;
+  bottom: -12px;
+  z-index: -1;
+}
+
+.articlesDecor2 {
+  width: 9.6%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 9.2%;
+  top: -20px;
+  z-index: -1;
+}
+
+.articlesDecor3 {
+  width: 8.7%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 14.4%;
+  bottom: -16px;
+  z-index: -1;
+}
+
+.articlesDecor4 {
+  width: 12%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: -3.8%;
+  top: 40px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 868px) {
+  .articleBlock {
+    width: 94.27%;
+  }
+
+  .articlesItem {
+    width: 48.62%;
+    margin-bottom: 40px;
+  }
+
+  .articlesItem:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .articlesBlock {
+    flex-wrap: wrap;
+  }
+
+  .articlesDecor1 {
+    width: 19.9%;
+    left: -6.8%;
+  }
+
+  .articlesDecor2 {
+    width: 11.4%;
+    right: 22.7%;
+  }
+
+  .articlesDecor3 {
+    width: 10.2%;
+    left: 17%;
+  }
+
+  .articlesDecor4 {
+    width: 14.2%;
+    right: -4.5%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .articleBlock {
+    width: 93.75%;
+  }
+
+  .articlesItem {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .articlesDateCaption20 {
+    margin-bottom: 13px;
+  }
+
+  .articleBlockTop {
+    flex-wrap: wrap;
+  }
+
+  .articleBlockTopLeftInside {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .articleBlockTopImg {
+    width: 26.9%;
+    margin: 0;
+  }
+
+  .articleBlockTopLeftInside .caption20, .articleBlockTopLeftInside .text16 {
+    text-align: left;
+  }
+
+  .articleBlockTopLeftInside div {
+    margin-left: 16px;
+  }
+
+  .articleBlockTopLeftInside .caption20 {
+    margin: 0 0 4px;
+  }
+
+  .articleBlockTopLeft, .articleBlockTopRight {
+    width: 100%;
+  }
+
+  .articleBlockTopRight .text {
+    padding: 16px;
+  }
+
+  .articleQuotes .text2 {
+    width: 73.666666%;
+  }
+
+  .articleQuotesLeft {
+    margin: 0;
+    left: -6%;
+    top: 0;
+  }
+
+  .articleQuotesRight {
+    margin: 0;
+    right: -6%;
+    top: 0;
+  }
+
+  .articleQuotesLeft, .articleQuotesRight {
+    width: 13%;
+    position: absolute;
+  }
+
+  .articleQuotes {
+    position: relative;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 24px;
+  }
+
+  .articleQuotes .text2 {
+    margin-top: 3px;
+  }
+
+  .articleBlock .text2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .articleBlock .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .articleBlockAdvice .text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .articleBlock .caption36 {
+    margin: 32px auto 24px;
+  }
+
+  .articleBlockAdvice {
+    padding: 12px 16px;
+  }
+
+  .articleBlockAdvice .caption20 {
+    display: flex;
+  }
+
+  .articlesDecor1 {
+    width: 23.3%;
+    left: -8%;
+  }
+
+  .articlesDecor2 {
+    width: 13.3%;
+    right: 26.7%;
+  }
+
+  .articlesDecor3 {
+    width: 12%;
+    left: 20%;
+  }
+
+  .articlesDecor4 {
+    width: 16.7%;
+    right: -5.3%;
+  }
+}

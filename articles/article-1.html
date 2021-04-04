@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RAIF | Articles</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link type="text/css" rel="stylesheet" href="../fonts/fonts.css">
+  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <link type="text/css" rel="stylesheet" href="./articles.css">
+</head>
+
+<body class="articleBody">
+  <div class="body">
+    <div class="menuBlock animationFadeInDown">
+      <div class="logoBlock">
+        <img id="logo1" class="logo" src="../images/logo-1.png" alt="" />
+        <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
+      </div>
+      <div class="menu">
+        <a class="link" href="#">Главная</a>
+        <a class="link" href="#">О фестивале</a>
+        <a class="link" href="#">Программа</a>
+        <a class="link linkLast" href="#">Интересное</a>
+      </div>
+      <div class="burgerMenu" data-open="0">
+        <img class="burgerImg" src="../images/burger.svg" alt="" />
+        <img class="burgerImgHidden" src="../images/cancel.svg" alt="" />
+      </div>
+    </div>
+    <div id="menuMobile" class="menu menuMobileHidden">
+      <a class="link" href="#">Главная</a>
+      <a class="link" href="#">О фестивале</a>
+      <a class="link" href="#">Программа</a>
+      <a class="link linkLast" href="#">Интересное</a>
+    </div>
+    <script type="text/javascript">
+      let logo = document.querySelector(".logoBlock"),
+        menuBlock = document.querySelector("#menuMobile"),
+        menu = document.querySelector(".burgerMenu"),
+        menuBlockAll = document.querySelector(".menuBlock");
+
+      menu.addEventListener("click", () => {
+        if (menu.dataset.open == 0) {
+          menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
+          menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
+          menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
+          menuBlock.classList = "menu menuMobile";
+          logo.querySelector("#logo1").classList = "logo logoHidden";
+          logo.querySelector("#logo2").classList = "logo";
+          menu.dataset.open = 1;
+        } else {
+          menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
+          menu.querySelector(".burgerImg").classList = "burgerImg";
+          menuBlockAll.classList = "menuBlock animationFadeInDown";
+          menuBlock.classList = "menu menuMobileHidden";
+          logo.querySelector("#logo1").classList = "logo";
+          logo.querySelector("#logo2").classList = "logo logoHidden";
+          menu.dataset.open = 0;
+        }
+      });
+    </script>
+
+    <div class="block articleBlock">
+      <p class="caption36">
+        От ассистента до Product Owner — как вырасти внутри банка
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin articleBlockTop">
+      <div class="articleBlockTopLeft">
+        <div class="articleBlockTopLeftInside">
+          <img class="articleBlockTopImg" src="../images/articles/article-test.png" alt="" />
+          <div>
+            <p class="caption20">
+              Ольга Бринза
+            </p>
+            <p class="text16">
+              Product Owner
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="articleBlockTopRight">
+        <p class="text">
+          Еще 5 лет назад Ольга Бринза пришла в Райффайзенбанк на позицию ассистента — за это время она успела самостоятельно освоить Data Science и Python, начала работать в аналитике, а потом пришла в продакт-менеджмент и сейчас управляет продуктом
+          по валютно-обменным операциям. Как расти внутри банка, постоянно учиться и не бояться перемен — об этом мы поговорили с Ольгой.
+        </p>
+      </div>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Первый опыт в крупном банке и выгорание
+      </p>
+      <p class="text">
+        В 2015-м я окончила факультет социологии в ВШЭ и еще даже не представляла, чем хочу заниматься.
+      </p>
+      <p class="text articleTextMarginTop">
+        В конце года увидела открытую вакансию ассистента команды IB (Investment Banking) в Райффайзенбанке. <span>«Начинать карьеру в такой большой корпорации — крутой старт»</span> — подумала я, успешно прошла три интервью и присоединилась к
+        команде в качестве ассистента.
+      </p>
+      <div class="articleQuotes">
+        <img class="articleQuotesLeft" src="../images/articles/quote-left.svg" alt="" />
+        <p class="text2">
+          Мне безумно нравилось работать на этой позиции: я была вовлечена в решение задач, которые требовали проактивности и умения находить решения быстро. Вопрос «‎можешь или не можешь»‎ даже не ставился. Уже на старте ты будто заключаешь
+          негласный договор и подписываешься на все обязанности и сроки.
+        </p>
+        <img class="articleQuotesRight" src="../images/articles/quote-right.svg" alt="" />
+      </div>
+      <p class="text">
+        Прошло меньше двух лет — к этому моменту я могла разрулить абсолютно любую ситуацию, а задачи перестали быть для меня вызовом. Так я столкнулась с <span>выгоранием</span>.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Что я хочу делать дальше и чем могу быть полезна?
+      </p>
+      <p class="text">
+        Сразу ответить на этот сложный вопрос не получилось, и я обратилась к своему руководителю. К счастью, Никита всегда был искренне заинтересован в развитии своих сотрудников. Наверное, поэтому я никогда не боялась говорить о подобных вещах с
+        руководителями — в Райфе всегда был и есть простор для конструктивного диалога.
+      </p>
+      <p class="text articleTextMarginTop">На стадии неопределенности мне очень помогли коллеги-наставники. Они посоветовали освоить профессию, связанную с <span>аналитикой</span>. Это огромный шаг в неизвестность, когда ты понимаешь предметную
+        область, имеешь бэкграунд в
+        области статистики и теории вероятности, но у тебя совсем нет опыта, например, в написании кода. Я начала с курсов по Data Science (работа с большими данными), прошла полугодовое обучение в университете Нетологии и освоила Python — язык
+        программирования для работы с аналитическими задачами.
+      </p>
+      <p class="text articleTextMarginTop">Параллельно с окончанием моего обучения в управление Capital Markets пришел новый продукт из ритейла — валютно-обменные операции для физических лиц. Я откликнулась на должность <span>младшего
+          аналитика</span> и начала работать в
+        тогда еще очень маленькой команде. Время шло — я всё глубже погружалась в аспекты продукта и повышала свою экспертизу.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Очередной level up
+      </p>
+      <p class="text">
+        Через год я смогла вырасти до позиции <span>аналитика</span> и стала <span>связующим звеном</span> между заказчиками и разработчиками. Тогда в нашей продуктовой команде было уже 9 человек, с которыми мы проработали около двух лет.
+      </p>
+      <p class="text articleTextMarginTop">Затем наш продакт уходит из банка, и на уровне руководителей принимается решение о переходе продукта из Capital Markets в дирекцию ритейла. Команду переместили на другой продукт, а мне <span>доверили
+          возможность управлять
+          им</span>. На данный момент уже в более компактном составе мы управляем всеми некредитными банковскими продуктами. Моя область ответственности очень расширилась — сейчас на позиции продакт-оунера я отвечаю не за один, а сразу за несколько
+        продуктов.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        В моей работе мне больше всего нравится ответственность
+      </p>
+      <p class="text">
+        Ты ответственен перед конечным пользователем продукта, ты формируешь видение, каким этот продукт будет, ты выступаешь ключевым звеном между клиентом и командой. Вообще, это нереально мощный вызов — менять пользовательский опыт и напрямую
+        влиять на восприятие имиджа всей компании.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Поддержка наставников – важный мотиватор
+      </p>
+      <p class="text">
+        Принимать ответственные решения не так страшно. В такие моменты мне важно <span>чувствовать, что в меня верят</span>. Такую функцию на протяжении всего пути выполняли и продолжают выполнять мои наставники — старшие коллеги, чьей экспертизе я
+        доверяю. Оглядываясь назад, я понимаю, насколько это было важно, — сейчас мне гораздо проще принимать любые решения.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Мультизадачность: что должен уметь продакт оунер
+      </p>
+      <p class="text">
+        Продакт-оунер выполняет часть функций руководителя проекта, проджекта, бизнес-стратега, аналитика и маркетолога. Здесь нужно понимать, что это очень мультизадачная роль, поэтому специалист должен:
+      </p>
+      <ul>
+        <li class="text"><span>&bull;</span>разбираться в разработке</li>
+        <li class="text"><span>&bull;</span>иметь представление о языках программирования</li>
+        <li class="text"><span>&bull;</span>уметь работать с данными</li>
+        <li class="text"><span>&bull;</span>понимать голос клиента</li>
+        <li class="text"><span>&bull;</span>уметь проводить интервью с пользователями (это называется Customer Development)</li>
+        <li class="text"><span>&bull;</span>управлять бэклогом (списком задач для команды, который меняется в зависимости от потребностей продукта)</li>
+        <li class="text"><span>&bull;</span>выстраивать приоритеты команды и транслировать ценность того, что вы делаете</li>
+        <li class="text"><span>&bull;</span>уметь выстроить эффективный процесс работы</li>
+      </ul>
+      <p class="text articleTextMarginTop">
+        И это далеко не все обязанности. Лично я особенно ценю, что могу постоянно <span>учиться чему-то новому, соприкасаться с клиентским опытом</span> и быть <span>ответственной за позиционирование продукта для клиента</span>.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin articleBlockAdvice">
+      <p class="caption20">
+        <img class="img" src="../images/articles/study.svg" alt="" /> Советы начинающим специалистам из любой сферы
+      </p>
+      <p class="text">
+        <span>Выстраивайте свой путь самостоятельно</span>. Кому-то хочется периодически менять свою специализацию, кому-то — углублять экспертизу и становиться незаменимым специалистом. И тот, и другой вариант развития событий по-своему правильный.
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>Поддерживайте в себе искренний интерес к тому, чем занимаетесь</span>. Лично мне в этом помогают вызовы — не бойтесь делать что-то новое. Чувствуете, что приближается выгорание и начинает тормозить вас? Попытайтесь найти решение,
+        которое сможет вас снова зажечь.
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>Не переставайте учиться</span>. Огромное информационное пространство дает простор для непрерывного обучения — подбирайте те ресурсы, которые видите для себя полезными. Я, например, прошла множество курсов и продолжаю учиться до сих пор.
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>Планируете продвигаться в развитии продукта?</span> Помните, что продакт-менеджмент невозможен без СustDev, статистики и основных инструментов аналитики. Посвятите этому значительное количество времени.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Пользуйтесь знаниями, пока они не устарели
+      </p>
+      <p class="text">
+        Два ключевых фактора убедили меня в том, что я готова работать на позиции продакт-оунера:
+      </p>
+      <ul>
+        <li class="text"><span>&bull;</span>я знаю продукт и процессы</li>
+        <li class="text"><span>&bull;</span>я постоянно повышаю свою компетенцию в продакт-менеджменте, СustDev и других важных для развития продукта областях</li>
+      </ul>
+      <div class="articleQuotes">
+        <img class="articleQuotesLeft" src="../images/articles/quote-left.svg" alt="" />
+        <p class="text2">
+          Вообще, для меня норма — постоянно учиться. <span>Если не пользоваться знаниями в полном объеме, в котором их получаешь, они очень быстро устаревают</span>. Рынок очень динамичный, и за ним можно попросту не успеть.
+        </p>
+        <img class="articleQuotesRight" src="../images/articles/quote-right.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Выгорание открывает путь к новым вызовам
+      </p>
+      <p class="text">
+        Буквально на каждой позиции я сталкивалась с выгоранием (но не везде оно обретало такие масштабы, как во время работы ассистентом), и каждый раз нужно было принимать решение — либо расширить область ответственности, либо сменить профиль
+        задач. Я выбирала второй вариант, и, с одной стороны, глобальные изменения вводили меня в определенный ступор, с другой — я понимала, что нужно просто идти вперед и действовать. Не забывайте — <span>ошибаться не страшно</span>.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Вы можете приобрести практически любую экспертизу
+      </p>
+      <p class="text">
+        <span>Для меня карьера — не просто целеполагание, а непрерывный путь</span>. Придя на позицию ассистента, я даже представить не могла, что смогу заниматься вещами, относящимися к финансам. Смотрела на своих коллег и совсем не могла соотнести
+        себя с такими высококлассными профессионалами. Из-за большой неопределенности я даже не ставила глобальные цели — скорее предпринимала шаги в краткосрочной перспективе.
+      </p>
+      <p class="text articleTextMarginTop">По прошествии времени я понимаю, как эти шаги привели меня к тому, чего я достигла сейчас. Все больше убеждаюсь, что <span>можно приобрести практически любую экспертизу — важно хотеть и делать</span>.
+        Собственными усилиями можно дорасти, например, до позиции продакт-менеджера в банке. У меня получилось.
+      </p>
+    </div>
+
+    <div class="block other">
+      <p class="caption36">
+        А еще у нас есть<br />интересные
+      </p>
+      <div class="otherPages">
+        <a class="otherPageItem otherPageItemFirst" href="#">
+          <p class="caption20">
+            Подкасты
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Вебинары
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Статьи
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+      </div>
+      <img class="otherHuman" src="../images/other-human.png" alt="" />
+      <img class="otherDecor1" src="../images/decor/decor-1.svg" alt="" />
+      <img class="otherDecor2" src="../images/decor/decor-2.svg" alt="" />
+      <img class="otherDecor3" src="../images/decor/decor-3-yellow.svg" alt="" />
+      <img class="otherBgShape" src="../images/other-bg.svg" alt="" />
+      <div class="otherBgShape2"></div>
+    </div>
+  </div>
+</body>
+
+</html>
