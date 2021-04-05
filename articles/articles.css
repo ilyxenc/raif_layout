@@ -191,6 +191,23 @@
   vertical-align: top;
 }
 
+.articleLiNumber {
+  width: 24px !important;
+  border-radius: 100px;
+  border: 1px solid #FEE600;
+  box-sizing: border-box;
+  height: 24px;
+  font-family: "Futura_Demi" !important;
+  line-height: 21px;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 12px;
+}
+
+.articleLiBold {
+  font-family: "Futura_Bold" !important;
+}
+
 .articleBlock .img {
   width: 24px;
   height: 24px;
@@ -262,6 +279,10 @@
   right: -3.8%;
   top: 40px;
   z-index: -1;
+}
+
+.articleBlockAdviceNoMargin {
+  margin: 0 !important;
 }
 
 @media only screen and (max-width: 868px) {

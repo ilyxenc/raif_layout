@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RAIF | Articles</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link type="text/css" rel="stylesheet" href="../fonts/fonts.css">
+  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <link type="text/css" rel="stylesheet" href="./articles.css">
+</head>
+
+<body class="articleBody">
+  <div class="body">
+    <div class="menuBlock animationFadeInDown">
+      <div class="logoBlock">
+        <img id="logo1" class="logo" src="../images/logo-1.png" alt="" />
+        <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
+      </div>
+      <div class="menu">
+        <a class="link" href="#">Главная</a>
+        <a class="link" href="#">О фестивале</a>
+        <a class="link" href="#">Программа</a>
+        <a class="link linkLast" href="#">Интересное</a>
+      </div>
+      <div class="burgerMenu" data-open="0">
+        <img class="burgerImg" src="../images/burger.svg" alt="" />
+        <img class="burgerImgHidden" src="../images/cancel.svg" alt="" />
+      </div>
+    </div>
+    <div id="menuMobile" class="menu menuMobileHidden">
+      <a class="link" href="#">Главная</a>
+      <a class="link" href="#">О фестивале</a>
+      <a class="link" href="#">Программа</a>
+      <a class="link linkLast" href="#">Интересное</a>
+    </div>
+    <script type="text/javascript">
+      let logo = document.querySelector(".logoBlock"),
+        menuBlock = document.querySelector("#menuMobile"),
+        menu = document.querySelector(".burgerMenu"),
+        menuBlockAll = document.querySelector(".menuBlock");
+
+      menu.addEventListener("click", () => {
+        if (menu.dataset.open == 0) {
+          menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
+          menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
+          menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
+          menuBlock.classList = "menu menuMobile";
+          logo.querySelector("#logo1").classList = "logo logoHidden";
+          logo.querySelector("#logo2").classList = "logo";
+          menu.dataset.open = 1;
+        } else {
+          menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
+          menu.querySelector(".burgerImg").classList = "burgerImg";
+          menuBlockAll.classList = "menuBlock animationFadeInDown";
+          menuBlock.classList = "menu menuMobileHidden";
+          logo.querySelector("#logo1").classList = "logo";
+          logo.querySelector("#logo2").classList = "logo logoHidden";
+          menu.dataset.open = 0;
+        }
+      });
+    </script>
+
+    <div class="block articleBlock">
+      <p class="caption36">
+        План действий
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin articleBlockTop">
+      <div class="articleBlockTopLeft">
+        <div class="articleBlockTopLeftInside">
+          <img class="articleBlockTopImg" src="../images/articles/article-test.png" alt="" />
+          <div>
+            <p class="caption20">
+              Светлана Павленкова
+            </p>
+            <p class="text16">
+              Эксперт по оценке персонала
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="articleBlockTopRight">
+        <p class="text">
+          Современный мир – изменчивый, неопределенный и невероятно сложный. Все больше сотрудников задаются вопросом: «Как понять, к чему стремиться в компании, если все может измениться в любую секунду?» Светлана Павленова, эксперт по оценке персонала в Райффайзенбанке, считает, что планировать свое развитие сейчас особенно важно – для этого она разработала индивидуальный план развития и рассказала нам о преимуществах этого инструмента.
+        </p>
+      </div>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Для чего нужен ИПР?
+      </p>
+      <p class="text">
+        Если ты подходишь к своей карьере и развитию осознанно, без ИПР тебе точно не обойтись. Конечно, можно продолжать вариться в котле из бесконечного потока информации, абстрактных целей, хаотичных планов, а затем и вовсе потерять любую мотивацию. Но намного лучше структурировать цели и направления, в которых ты хочешь развиваться.
+      </p>
+      <p class="text articleTextMarginTop">
+        Здесь на помощь приходит <span>индивидуальный план развития (ИПР)</span> – инструмент, который содержит последовательные и конкретные шаги по повышению эффективности сотрудников, которые бросают вызов собственным возможностям. Использование ИПР позволяет рационально использовать свое время и ресурсы, фильтровать цели и добиваться желаемых результатов.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        ИПР: добровольно или принудительно
+      </p>
+      <p class="text">
+        Раньше в Райффайзенбанке был достаточно формализованный подход к плану развития – чтобы согласовать цели в процессе performance management, мы требовали от каждого сотрудника обязательного заполнения поля «ИПР». Давали четкие указания по заполнению, учили отличать хороший ИПР от плохого и транслировали такую мысль:
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin articleBlockAdvice">
+      <p class="caption20 articleBlockAdviceNoMargin">
+        <img class="img" src="../images/articles/idea.svg" alt="" /> ИПР – это очень важно. Поэтому пока ты не заполнишь его, твоя форма не будет согласована.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="text articleTextMarginTop">
+        Такое позиционирование работало до определенного момента – после очередного анализа форм performance мы поняли, <span>что этот подход не работает</span>. Многие сотрудники подходили к заполнению очень «креативно» – ставили в графе «ИПР» точки, тире или случайный набор слов, чтобы система согласовала их форму.
+      </p>
+      <p class="text articleTextMarginTop">
+        После этого мы решили подойти к процессу развития более реалистично и снизить планку ожидания от сотрудников. Кто хочет заполнить форму, в любом случае сделает это, поэтому теперь согласование целей не зависит от ИПР – он стал добровольным. В то же время сейчас практически все сотрудники, которые хотят работать со своими областями для развития, осознают, что <span>ИПР – очень мощный шаг к развитию</span>.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Как составить ИПР?
+      </p>
+      <p class="text">
+        <span>Определись с фокусом</span>. План развития может формироваться на базе совершенно разных потребностей, поэтому сначала ответь на вопрос: <span>на что направлен твой ИПР</span>? Возможно, ты хотел бы развивать свои сильные стороны? Или получить руководящую должность? Планируешь увеличить бизнес-показатели или вообще попробовать себя в <span>другом направлении?</span>
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>Сформулируй цель правильно</span>. Для четкого понимания своего развития при работе с ИПР формулируй цель по известной методике SMART (цель должна быть конкретна, измерима, достижима, актуальна и ограничена по времени).
+      </p>
+      <p class="text articleTextMarginTop">
+        Представим, что ты хочешь освоить новый навык – как использовать эту методику?
+      </p>
+      <ul>
+        <li class="text"><span class="articleLiNumber">1</span>Максимально конкретно опиши навык, который хочешь развить.</li>
+        <li class="text"><span class="articleLiNumber">2</span>Сформулируй четкие показатели для отслеживания прогресса (уровень желаемого навыка).</li>
+        <li class="text"><span class="articleLiNumber">3</span>Ставь задачи, которые тебе по силам.</li>
+        <li class="text"><span class="articleLiNumber">4</span>Спроси себя «Зачем мне это нужно?», чтобы определить актуальность цели.</li>
+        <li class="text"><span class="articleLiNumber">5</span>Определись со сроками – к какому времени ты хочешь освоить этот навык.</li>
+      </ul>
+      <p class="text articleTextMarginTop">
+        <span>Составь список развивающих мероприятий</span>. Здесь мы работаем по всеми любимому принципу 70/20/10: 70% – применение знаний и навыков на рабочем месте, 20% – обучение и развитие на опыте других, 10% – образование (чтение литературы, вебинары, семинары и тренинги).
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>Обсуждай ИПР с руководителем</span>. В Райффайзенбанке у сотрудников, которые работают с ИПР, есть классная возможность встретиться с руководителем и обсудить с ним свою эффективность. Мы рекомендуем делать это как минимум три раза в год – при составлении плана развития, при промежуточном обзоре и при оценке эффективности. Такой подход в заполнении ИПР и встречах с руководителем в рамках перфоманс-менеджмента предоставляет возможность значительного роста при условии, что сотрудник проактивно подходит к развитию своей карьеры.
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>Выбери наставников по развивающим целям</span>. Намного проще развивать персональные навыки и качества, если есть поддержка. Отметь в своем ИПР тех, кто будет помогать тебе в развитии, отслеживать прогресс и контролировать процесс – коллег, руководителей и других помощников.
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>ИПР – это только твоя ответственность</span>. Ответственность за развитие и карьерные шаги несешь только ты, а не компания или руководитель. Подходи к ИПР осознанно и бери процесс в собственные руки.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        Какие проблемы могут возникнуть при работе с ИПР и как с ними справиться
+      </p>
+      <p class="text">
+        Принимать ответственные решения не так страшно. В такие моменты мне важно чувствовать, что в меня верят. Такую функцию на протяжении всего пути выполняли и продолжают выполнять мои наставники – старшие коллеги, чьей экспертизе я неукоснительно доверяю. Оглядываясь назад, я понимаю, какой мотивацией мне служила такая поддержка и как она помогла мне в перспективе. Сейчас я научилась справляться с подобными решениями даже без дополнительного стимула.
+      </p>
+      <div class="articleQuotes">
+        <img class="articleQuotesLeft" src="../images/articles/quote-left.svg" alt="" />
+        <p class="text2">
+          В начале года я был полон энтузиазма. Запланировал себе несколько онлайн-курсов, парочку тренингов, выступления на конференции. Но из-за высокой загрузки на работе успел только пройти тренинг, а до конца года остается всего два месяца. Меня это ужасно фрустрирует. Что делать?
+        </p>
+        <img class="articleQuotesRight" src="../images/articles/quote-right.svg" alt="" />
+      </div>
+      <p class="text articleTextMarginTop">
+        Подобные ситуации – не приговор, а повод проанализировать, что тебе действительно нужно в работе и сколько времени ты можешь уделять обучению. В таких случаях предлагаю ответить на вопросы, чтобы приоритезировать выбранные мероприятия:
+      </p>
+      <ul>
+        <li class="text"><span>&bull;</span>что отвлекло от запланированных обучающих мероприятий?</li>
+        <li class="text"><span>&bull;</span>мне действительно надо столько курсов?</li>
+        <li class="text"><span>&bull;</span>почему я выбрал эти мероприятия: это было любопытно и интересно? Или эти знания крайне важны для работы мне?</li>
+        <li class="text"><span>&bull;</span>сколько времени я могу уделять обучению?</li>
+      </ul>
+      <div class="articleQuotes">
+        <img class="articleQuotesLeft" src="../images/articles/quote-left.svg" alt="" />
+        <p class="text2">
+          Проблема: составил ИПР, но ничего не происходит.
+        </p>
+        <img class="articleQuotesRight" src="../images/articles/quote-right.svg" alt="" />
+      </div>
+      <p class="text articleTextMarginTop">
+        Не жди у моря погоды и бери инициативу в свои руки. Инициируй дополнительные активности и беседы с руководителем, напоминай про свои желания и цели, подумай, как связать план развития и свои основные рабочие задачи.
+      </p>
+    </div>
+
+    <div class="block articleBlock articleMargin">
+      <p class="caption20">
+        План развития - это живой инструмент
+      </p>
+      <p class="text">
+        <span>ИПР – это не закостенелая конструкция, которая не должна выходить за рамки жестких правил</span>. Мы рекомендуем возвращаться к нему регулярно, вносить свои комментарии и анализировать, как он соотносится с жизнью. Таким образом, ты можешь смело адаптировать свои обучающие активности под новые вызовы.
+      </p>
+      <p class="text articleTextMarginTop">
+        Главное помнить, что <span>даже максимально простой и не очень хорошо сформулированный ИПР в блокноте — намного лучше, чем его отсутствие</span>. Ведь ты уже сделал какой-то шаг к своему развитию и будущему успеху.
+      </p>
+      <p class="text articleTextMarginTop">
+        <span>И, напоследок, 7 обязательных ингредиентов для формирования классного ИПР:</span>
+      </p>
+      <ul>
+        <li class="text"><span class="articleLiNumber">1</span>Определи фокус, над чем ты хочешь работать.</li>
+        <li class="text"><span class="articleLiNumber">2</span>Сформулируй цель по развитию по SMART.</li>
+        <li class="text"><span class="articleLiNumber">3</span>Создай экшн-план, обозначь развивающие мероприятия методом 70/20/10.</li>
+        <li class="text"><span class="articleLiNumber">4</span>Обсуди свой индивидуальный план развития с действующим руководителем.</li>
+        <li class="text"><span class="articleLiNumber">5</span>Найди наставников, которые будут поддерживать тебя.</li>
+        <li class="text"><span class="articleLiNumber">6</span>Возьми ответственность за свой ИПР, отмечай прогресс, ищи возможности.</li>
+        <li class="text articleLiBold"><span class="articleLiNumber">7</span>Научись составлять ИПР по правилам, а потом нарушай их и придумывай свои.</li>
+      </ul>
+    </div>
+
+    <div class="block other">
+      <p class="caption36">
+        А еще у нас есть<br />интересные
+      </p>
+      <div class="otherPages">
+        <a class="otherPageItem otherPageItemFirst" href="#">
+          <p class="caption20">
+            Подкасты
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Вебинары
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+        <a class="otherPageItem" href="#">
+          <p class="caption20">
+            Статьи
+          </p>
+          <img class="otherArrow" src="../images/arrow-button.png" alt="" />
+        </a>
+      </div>
+      <img class="otherHuman" src="../images/other-human.png" alt="" />
+      <img class="otherDecor1" src="../images/decor/decor-1.svg" alt="" />
+      <img class="otherDecor2" src="../images/decor/decor-2.svg" alt="" />
+      <img class="otherDecor3" src="../images/decor/decor-3-yellow.svg" alt="" />
+      <img class="otherBgShape" src="../images/other-bg.svg" alt="" />
+      <div class="otherBgShape2"></div>
+    </div>
+  </div>
+</body>
+
+</html>
