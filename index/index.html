@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RAIF | Main</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link type="text/css" rel="stylesheet" href="../fonts/fonts.css">
+  <link type="text/css" rel="stylesheet" href="../css/index.css">
+  <link type="text/css" rel="stylesheet" href="./main.css">
+
+  <script type="text/javascript">
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    }
+  </script>
+</head>
+
+<body>
+  <div class="body">
+    <div class="menuBlock animationFadeInDown">
+      <div class="logoBlock">
+        <img id="logo1" class="logo" src="../images/logo-2.png" alt="" />
+        <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
+      </div>
+      <div class="menu">
+        <a class="link" href="#">Главная</a>
+        <a class="link" href="#">О фестивале</a>
+        <a class="link" href="#">Программа</a>
+        <a class="link linkLast" href="#">Интересное</a>
+      </div>
+      <div class="burgerMenu" data-open="0">
+        <img class="burgerImg" src="../images/burger.svg" alt="" />
+        <img class="burgerImgHidden" src="../images/cancel.svg" alt="" />
+      </div>
+    </div>
+    <div id="menuMobile" class="menu menuMobileHidden">
+      <a class="link" href="#">Главная</a>
+      <a class="link" href="#">О фестивале</a>
+      <a class="link" href="#">Программа</a>
+      <a class="link linkLast" href="#">Интересное</a>
+    </div>
+    <script type="text/javascript">
+      let logo = document.querySelector(".logoBlock"),
+        menuBlock = document.querySelector("#menuMobile"),
+        menu = document.querySelector(".burgerMenu"),
+        menuBlockAll = document.querySelector(".menuBlock");
+
+      menu.addEventListener("click", () => {
+        if (menu.dataset.open == 0) {
+          menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
+          menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
+          menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
+          menuBlock.classList = "menu menuMobile";
+          logo.querySelector("#logo1").classList = "logo logoHidden";
+          logo.querySelector("#logo2").classList = "logo";
+          menu.dataset.open = 1;
+        } else {
+          menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
+          menu.querySelector(".burgerImg").classList = "burgerImg";
+          menuBlockAll.classList = "menuBlock animationFadeInDown";
+          menuBlock.classList = "menu menuMobileHidden";
+          logo.querySelector("#logo1").classList = "logo";
+          logo.querySelector("#logo2").classList = "logo logoHidden";
+          menu.dataset.open = 0;
+        }
+      });
+    </script>
+
+    <div class="indexTopBlock">
+      <div class="doorBlock">
+        <div class="doorInside">
+          <img class="doorImg" src="../images/logo-main.png" alt="" />
+          <div class="doorElement"></div>
+        </div>
+
+        <img class="indexPlayButton animationFadeInLeft" src="../images/index-play.svg" alt="" />
+      </div>
+
+      <div class="indexNews animationFadeInNews">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="indexNewsItem swiper-slide">
+              <p class="caption16">
+                У нас вышел новый Видеоролик “О фестивале”
+              </p>
+              <p class="text16">
+                от 04 апреля 2021
+              </p>
+            </div>
+            <div class="indexNewsItem swiper-slide">
+              <p class="caption16">
+                Не пропустите, сегодня Вебинар “Карьера в Райфе: инструкция по применению” старт в 10:00
+              </p>
+              <p class="text16">
+                от 04 апреля 2021
+              </p>
+            </div>
+            <div class="indexNewsItem swiper-slide">
+              <p class="caption16">
+                Наименование новости в две строки
+              </p>
+              <p class="text16">
+                от 04 апреля 2021
+              </p>
+            </div>
+            <div class="indexNewsItem swiper-slide">
+              <p class="caption16">
+                Наименование новости в две строки
+              </p>
+              <p class="text16">
+                от 04 апреля 2021
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="indexNavigation">
+          <img class="indexArrow1" src="../images/index-arrow.svg" alt="" />
+          <img class="indexArrow2" src="../images/index-arrow.svg" alt="" />
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          direction: window.innerWidth > 868 ? 'vertical' : 'horizontal',
+          slidesPerView: window.innerWidth > 1300 ? 3 : (window.innerWidth > 868 ? 2 : 3),
+          spaceBetween: '2.38095238095%',
+          navigation: {
+            nextEl: '.indexArrow2',
+            prevEl: '.indexArrow1',
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              direction: 'horizontal',
+            },
+            668: {
+              slidesPerView: 2,
+              direction: 'horizontal',
+            },
+            768: {
+              slidesPerView: 3,
+              direction: 'horizontal',
+            },
+            869: {
+              slidesPerView: 2,
+            },
+            1300: {
+              slidesPerView: 3,
+            }
+          }
+        });
+
+        window.addEventListener("resize", () => {
+          // swiper.destroy();
+          // swiper.init();
+          // swiper.update();
+          // swiper.params.direction = window.innerWidth > 868 ? 'vertical' : 'horizontal';
+          // swiper.params.slidesPerView = window.innerWidth > 1300 ? 3 : (window.innerWidth > 868 ? 2 : 3);
+        });
+      </script>
+    </div>
+
+  </div>
+</body>
+
+</html>

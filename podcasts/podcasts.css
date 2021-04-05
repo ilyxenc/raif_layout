@@ -154,10 +154,12 @@
 
 .podcastsExample {
   width: 100%;
-  height: 50px;
+  height: 55px;
   border-radius: 6px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
   background: #F2F2F2;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .podcastsBlockExample {
@@ -329,10 +331,6 @@
     width: 31.5%;
   }
 
-  .podcastsExample {
-    height: 38px;
-  }
-
   .podcastsBgShape {
     top: 50px;
     height: 686px;
@@ -420,10 +418,6 @@
     margin: 16px auto 0;
   }
 
-  .podcastsExample {
-    height: 60px;
-  }
-
   .podcastsImagesBlockImg {
     width: 59%;
     border-radius: 8px;
@@ -431,7 +425,6 @@
   }
 
   .podcastsImagesBlock {
-    /* width: 106.666666%; */
     width: 100%;
     padding: 0 3.333333%;
     left: -3.333333%;
