@@ -258,12 +258,26 @@ body {
   position: relative;
 }
 
+.blockSmall {
+  width: 60.555555555%;
+}
+
 .caption36 {
   font-family: "Futura_Bold";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.caption52 {
+  font-family: "Futura_Bold";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -319,6 +333,44 @@ body {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.text20 {
+  font-family: "Futura_Book";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.marginTop24 {
+  margin-top: 24px;
+}
+
+.marginTop12 {
+  margin-top: 12px;
+}
+
+.marginTop40 {
+  margin-top: 40px;
+}
+
+.marginTop80 {
+  margin-top: 80px;
+}
+
+.marginTop160 {
+  margin-top: 160px;
+}
+
+.marginTop16 {
+  margin-top: 16px;
+}
+
+.marginTop8 {
+  margin-top: 8px;
 }
 
 .articleItem {

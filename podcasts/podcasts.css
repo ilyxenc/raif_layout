@@ -12,13 +12,12 @@
 
 .podcastsDateItems {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .podcastsDateItem {
-  width: 22.74%;
-  margin-right: 3%;
+  width: 32.1100917431%;
   margin-top: 16px;
 }
 
@@ -92,6 +91,7 @@
 
 .podcastsInfoBlock {
   margin-top: 40px;
+  position: relative;
 }
 
 .podcastsInfoBlockLeftNamesImg {
@@ -304,12 +304,12 @@
 }
 
 .podcastsDecor13 {
-  width: 32.07%;
+  width: 48.8532110092%;
   height: auto;
   display: block;
   position: absolute;
-  right: 8.6%;
-  top: 24px;
+  right: -33.880733945%;
+  bottom: 0;
   z-index: -1;
 }
 
@@ -443,6 +443,8 @@
 
   .podcastsInfoBlock {
     margin-top: 32px;
+    display: flex;
+    flex-direction: column;
   }
 
   .podcastsInfoBlockRight {
