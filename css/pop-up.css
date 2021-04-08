@@ -18,6 +18,10 @@
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
+.popUpTypeBlock {
+  height: 560px;
+}
+
 .popUpInsideQuestion {
   background: #FFFFFF url(../images/pop-up/bg-2.png) no-repeat center center / cover;
 }
@@ -169,7 +173,20 @@
   cursor: pointer;
 }
 
+.popUpDescriptionError {
+  margin-top: 80px;
+}
+
 @media only screen and (max-width: 668px) {
+  .popUpDescriptionError {
+    margin-top: 68px;
+  }
+
+  .popUpTypeBlock .popUpCaption {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
   .popUpInside {
     max-width: 300px;
     width: 100%;

@@ -611,6 +611,11 @@ body {
 }
 
 @media only screen and (max-width: 668px) {
+  .caption52 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
   .menuBlock, .block, .other {
     width: 93.75%;
   }
