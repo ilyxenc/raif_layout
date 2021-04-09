@@ -26,7 +26,7 @@
 
 <body>
   <div class="body">
-    <div class="menuBlock animationFadeInDown">
+    <div class="menuBlock animationOpacity">
       <div class="logoBlock">
         <img id="logo1" class="logo" src="../images/logo-2.png" alt="" />
         <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
@@ -58,7 +58,7 @@
         if (menu.dataset.open == 0) {
           menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
           menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
-          menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
+          menuBlockAll.classList = "menuBlock animationOpacity menuBlockShown";
           menuBlock.classList = "menu menuMobile";
           logo.querySelector("#logo1").classList = "logo logoHidden";
           logo.querySelector("#logo2").classList = "logo";
@@ -66,7 +66,7 @@
         } else {
           menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
           menu.querySelector(".burgerImg").classList = "burgerImg";
-          menuBlockAll.classList = "menuBlock animationFadeInDown";
+          menuBlockAll.classList = "menuBlock animationOpacity";
           menuBlock.classList = "menu menuMobileHidden";
           logo.querySelector("#logo1").classList = "logo";
           logo.querySelector("#logo2").classList = "logo logoHidden";
@@ -82,10 +82,10 @@
           <div class="doorElement"></div>
         </div>
 
-        <img class="indexPlayButton animationFadeInLeft" src="../images/index-play.svg" alt="" />
+        <img class="indexPlayButton animationOpacity" src="../images/index-play.svg" alt="" />
       </div>
 
-      <div class="indexNews animationFadeInNews">
+      <div class="indexNews animationOpacity">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="indexNewsItem swiper-slide">
@@ -132,34 +132,81 @@
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
       <script>
+        let resizeSlides = (wid, hei) => {
+          if (hei < 750 && wid < 1300) {
+            return 1;
+          }
+          if (wid >= 0 && wid < 668) {
+            return 1;
+          }
+          if (wid >= 668 && wid < 768) {
+            return 2;
+          }
+          if (wid >= 768 && wid < 869) {
+            return 3;
+          }
+          if (wid >= 869 && wid < 1300) {
+            return 2;
+          }
+          if (wid >= 1300) {
+            return 3;
+          }
+        }
+
+        let clearWidOrHei = (param) => {
+          document.querySelectorAll(".indexNewsItem").forEach((item, i) => {
+            if (param == 'hei') {
+              item.style.height = '100%';
+            }
+            if (param == 'wid') {
+              item.style.width = '100%';
+            }
+          });
+        }
+
+        let resizeDirection = (wid, hei) => {
+          if (hei < 750 && wid < 1300) {
+            clearWidOrHei('wid');
+            return 'vertical';
+          }
+          if (wid >= 0 && wid < 668) {
+            clearWidOrHei('hei');
+            return 'horizontal';
+          }
+          if (wid >= 668 && wid < 768) {
+            clearWidOrHei('hei');
+            return 'horizontal';
+          }
+          if (wid >= 768 && wid < 869) {
+            clearWidOrHei('hei');
+            return 'horizontal';
+          }
+          if (wid >= 869 && wid < 1300) {
+            clearWidOrHei('wid');
+            return 'vertical';
+          }
+          if (wid >= 1300) {
+            clearWidOrHei('wid');
+            return 'vertical';
+          }
+        }
+
         var swiper = new Swiper('.swiper-container', {
-          direction: window.innerWidth > 868 ? 'vertical' : 'horizontal',
-          slidesPerView: window.innerWidth > 1300 ? 3 : (window.innerWidth > 868 ? 2 : 3),
+          direction: resizeDirection(window.innerWidth, window.innerHeight),
+          slidesPerView: resizeSlides(window.innerWidth, window.innerHeight),
           spaceBetween: '2.38095238095%',
           navigation: {
             nextEl: '.indexArrow2',
             prevEl: '.indexArrow1',
           },
-          breakpoints: {
-            0: {
-              slidesPerView: 1,
-              direction: 'horizontal',
-            },
-            668: {
-              slidesPerView: 2,
-              direction: 'horizontal',
-            },
-            768: {
-              slidesPerView: 3,
-              direction: 'horizontal',
-            },
-            869: {
-              slidesPerView: 2,
-            },
-            1300: {
-              slidesPerView: 3,
-            }
-          }
+        });
+
+        window.addEventListener("resize", () => {
+          let wid = window.innerWidth,
+            hei = window.innerHeight;
+
+          swiper.params.slidesPerView = resizeSlides(wid, hei);
+          swiper.params.direction = resizeDirection(wid, hei);
         });
       </script>
     </div>
@@ -1043,7 +1090,8 @@
         <div class="indexLifehack marginTop16">
           <img class="indexLifehackIcon" src="../images/index/idea.svg" alt="" />
           <p class="text20">
-            <span>Лайфхак:</span> на сайте можно подписаться на персонализированную подборку вакансий. Вы задаете в поиске параметры интересной вам позиции и справа появляется кнопка «Подписаться». Кликните на нее, и раз в неделю вам будет приходить подборка релевантных вакансий на почту.
+            <span>Лайфхак:</span> на сайте можно подписаться на персонализированную подборку вакансий. Вы задаете в поиске параметры интересной вам позиции и справа появляется кнопка «Подписаться». Кликните на нее, и раз в неделю вам будет приходить
+            подборка релевантных вакансий на почту.
           </p>
         </div>
         <a class="indexInterestingLink marginTop16" href="#">Канал #community_team в Slack<br />Telegram-канал «ITeam»</a>
@@ -1052,7 +1100,8 @@
         </p>
         <a class="indexInterestingLink marginTop16" href="#">Рекрутер</a>
         <p class="text20 marginTop8">
-          Если вам хочется узнать больше о какой-то вакансии, вы всегда можете написать рекрутеру — он ответит на ваши вопросы. На <a class="indexAboutLink" href="#">карьерном портале</a> под каждой вакансией есть контакт конкретного специалиста, который может вам помочь.
+          Если вам хочется узнать больше о какой-то вакансии, вы всегда можете написать рекрутеру — он ответит на ваши вопросы. На <a class="indexAboutLink" href="#">карьерном портале</a> под каждой вакансией есть контакт конкретного специалиста,
+          который может вам помочь.
         </p>
         <a class="indexInterestingLink marginTop16" href="#">HRBP</a>
         <p class="text20 marginTop8">
@@ -1096,7 +1145,8 @@
         <div class="indexFoodBlock marginTop8">
           <img class="indexFoodImg" src="../images/index/food.png" alt="" />
           <p class="text20">
-            Серия ежемесячных онлайн-трансляций, на которые мы приглашаем интересных гостей из разных сфер — с ними мы обсуждаем карьеру и возможности внутри Райфа, говорим об особенностях разных вакансий и вдохновляемся историям успеха. Вы уже можете посмотреть записи завтраков <a class="indexAboutLink" href="#">«Как откликнуться на вакансию мечты»</a> и <a class="indexAboutLink" href="#">«Что нужно знать о риск-менеджменте»</a>.
+            Серия ежемесячных онлайн-трансляций, на которые мы приглашаем интересных гостей из разных сфер — с ними мы обсуждаем карьеру и возможности внутри Райфа, говорим об особенностях разных вакансий и вдохновляемся историям успеха. Вы уже
+            можете посмотреть записи завтраков <a class="indexAboutLink" href="#">«Как откликнуться на вакансию мечты»</a> и <a class="indexAboutLink" href="#">«Что нужно знать о риск-менеджменте»</a>.
           </p>
         </div>
         <div class="indexLifehack marginTop12">

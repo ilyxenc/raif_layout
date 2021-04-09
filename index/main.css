@@ -44,7 +44,7 @@ body {
   margin-top: 11%;
   transform-origin: right center;
   transform: var(--transformation);
-  animation: openDoor 0.7s ease-in-out;
+  animation: openDoor 1.5s ease-in-out;
   animation-fill-mode: forwards;
   /* transition: 0.2s; */
 }
@@ -695,6 +695,7 @@ body {
     width: 100%;
     height: 193px;
     padding: 12px 20px 44px;
+    border-radius: 0;
   }
 
   .indexNewsItem {
