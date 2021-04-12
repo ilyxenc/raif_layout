@@ -44,7 +44,7 @@ body {
   margin-top: 11%;
   transform-origin: right center;
   transform: var(--transformation);
-  animation: openDoor 1.5s ease-in-out;
+  animation: openDoor 0.7s ease-in-out;
   animation-fill-mode: forwards;
   /* transition: 0.2s; */
 }
@@ -558,37 +558,7 @@ body {
   z-index: -2;
 }
 
-.indexPopUpVideoBlock {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(43, 45, 51, 0.4);
-  backdrop-filter: blur(4px);
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-}
-
-.indexPopUpVideoBlockHidden {
-  display: none;
-}
-
-.indexPopUpVideoInside {
-  width: 60.5555555556%;
-}
-
-.indexNoScroll {
-  overflow: hidden !important;
-}
-
 @media only screen and (max-width: 868px) {
-  .indexPopUpVideoInside {
-    width: 90%;
-  }
-
   .indexProgramDecor1 {
     width: 11.8784530387%;
     left: 69.7513812155%;
@@ -725,7 +695,6 @@ body {
     width: 100%;
     height: 193px;
     padding: 12px 20px 44px;
-    border-radius: 0;
   }
 
   .indexNewsItem {

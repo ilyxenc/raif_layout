@@ -80,6 +80,10 @@
   margin-bottom: 12px;
 }
 
+.articleBlock .caption20 span {
+  font-family: "Futura_Book";
+}
+
 .articleBody {
   background: #FFFFFF;
 }
@@ -183,12 +187,18 @@
 .articleBlock li {
   margin-top: 8px;
   vertical-align: top;
+  display: flex;
 }
 
 .articleBlock li span {
   width: 20px;
   display: inline-block;
   vertical-align: top;
+}
+
+.articleLiNumberText {
+  width: auto !important;
+  font-family: "Futura_Book" !important;
 }
 
 .articleLiNumber {
@@ -202,10 +212,39 @@
   font-size: 16px;
   text-align: center;
   margin-right: 12px;
+  flex: 0 0 auto;
 }
 
 .articleLiBold {
   font-family: "Futura_Bold" !important;
+}
+
+.articleSvgTablet {
+  display: none;
+}
+
+.articleSvg, .articleSvgTablet {
+  width: 100%;
+  height: auto;
+  /* z-index: -3; */
+  position: relative;
+  line-height: 0;
+}
+
+#button1, #button1Triangle {
+  cursor: pointer;
+}
+
+.button1 {
+  cursor: pointer;
+  transition: 0.3s;
+  fill: #2B2D33;
+}
+
+.button1Triangle {
+  cursor: pointer;
+  transition: 0.3s;
+  fill: #FEE600;
 }
 
 .articleBlock .img {
@@ -222,6 +261,10 @@
   border-radius: 12px;
   padding: 16px 20px;
   box-sizing: border-box;
+}
+
+.articleBlockAdviceFlex {
+  display: flex;
 }
 
 .articleQuotesLeft, .articleQuotesRight {
@@ -286,6 +329,14 @@
 }
 
 @media only screen and (max-width: 868px) {
+  .articleSvg {
+    display: none;
+  }
+
+  .articleSvgTablet {
+    display: block;
+  }
+
   .articleBlock {
     width: 94.27%;
   }

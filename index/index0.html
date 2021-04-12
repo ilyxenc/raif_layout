@@ -26,7 +26,7 @@
 
 <body>
   <div class="body">
-    <div class="menuBlock animationOpacity">
+    <div class="menuBlock animationFadeInDown">
       <div class="logoBlock">
         <img id="logo1" class="logo" src="../images/logo-2.png" alt="" />
         <img id="logo2" class="logo logoHidden" src="../images/logo-3.png" alt="" />
@@ -58,7 +58,7 @@
         if (menu.dataset.open == 0) {
           menu.querySelector(".burgerImgHidden").classList = "burgerImgCancel";
           menu.querySelector(".burgerImg").classList = "burgerImg burgerImgHidden";
-          menuBlockAll.classList = "menuBlock animationOpacity menuBlockShown";
+          menuBlockAll.classList = "menuBlock animationFadeInDown menuBlockShown";
           menuBlock.classList = "menu menuMobile";
           logo.querySelector("#logo1").classList = "logo logoHidden";
           logo.querySelector("#logo2").classList = "logo";
@@ -66,7 +66,7 @@
         } else {
           menu.querySelector(".burgerImgCancel").classList = "burgerImgHidden";
           menu.querySelector(".burgerImg").classList = "burgerImg";
-          menuBlockAll.classList = "menuBlock animationOpacity";
+          menuBlockAll.classList = "menuBlock animationFadeInDown";
           menuBlock.classList = "menu menuMobileHidden";
           logo.querySelector("#logo1").classList = "logo";
           logo.querySelector("#logo2").classList = "logo logoHidden";
@@ -82,10 +82,10 @@
           <div class="doorElement"></div>
         </div>
 
-        <img class="indexPlayButton animationOpacity" src="../images/index-play.svg" alt="" />
+        <img class="indexPlayButton animationFadeInLeft" src="../images/index-play.svg" alt="" />
       </div>
 
-      <div class="indexNews animationOpacity">
+      <div class="indexNews animationFadeInNews">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="indexNewsItem swiper-slide">
@@ -157,11 +157,9 @@
           document.querySelectorAll(".indexNewsItem").forEach((item, i) => {
             if (param == 'hei') {
               item.style.height = '100%';
-              return
             }
             if (param == 'wid') {
               item.style.width = '100%';
-              return
             }
           });
         }
@@ -209,49 +207,6 @@
 
           swiper.params.slidesPerView = resizeSlides(wid, hei);
           swiper.params.direction = resizeDirection(wid, hei);
-        });
-      </script>
-    </div>
-    <div class="indexPopUpVideoBlock indexPopUpVideoBlockHidden">
-      <div class="indexPopUpVideoInside">
-        <iframe src="https://player.vimeo.com/video/535191347" width="100%" height="100%" class="indexPopUpVideo" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <script type="text/javascript">
-        let video = document.querySelectorAll(".indexPopUpVideo"),
-          videoBlock = document.querySelectorAll(".indexPopUpVideoInside"),
-          btnPlay = document.querySelector(".indexPlayButton"),
-          indexPlayBg = document.querySelector(".indexPopUpVideoBlock");
-
-        indexPlayBg.addEventListener("click", () => {
-          indexPlayBg.classList = "indexPopUpVideoBlock indexPopUpVideoBlockHidden";
-          document.querySelector("body").classList = "";
-        });
-
-        btnPlay.addEventListener("click", () => {
-          let videoBlock = document.querySelector(".indexPopUpVideoBlock");
-          if (videoBlock.classList == "indexPopUpVideoBlock") {
-            videoBlock.classList = "indexPopUpVideoBlock indexPopUpVideoBlockHidden";
-            document.querySelector("body").classList = "";
-            video.forEach((item, i) => {
-              item.style.height = item.offsetWidth / 16 * 9 + "px";
-            });
-          } else {
-            videoBlock.classList = "indexPopUpVideoBlock";
-            document.querySelector("body").classList = "indexNoScroll";
-            video.forEach((item, i) => {
-              item.style.height = item.offsetWidth / 16 * 9 + "px";
-            });
-          }
-        });
-
-        video.forEach((item, i) => {
-          item.style.height = item.offsetWidth / 16 * 9 + "px";
-        });
-
-        window.addEventListener("resize", () => {
-          video.forEach((item, i) => {
-            item.style.height = item.offsetWidth / 16 * 9 + "px";
-          });
         });
       </script>
     </div>
