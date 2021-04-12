@@ -19,6 +19,16 @@
 .podcastsDateItem {
   width: 32.1100917431%;
   margin-top: 16px;
+  text-decoration: none;
+  outline: none;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.podcastsDateItem:hover {
+  transition: 0.3s;
+  opacity: 0.8;
 }
 
 .podcastsDateItemImgBlock {
