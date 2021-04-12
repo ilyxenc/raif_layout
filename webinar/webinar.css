@@ -62,7 +62,7 @@
 .webinarLinkItemLink:hover {
   transition: 0.3s;
   background: #2B2D33;
-  transform: scale(1.1);
+  transform: scale(1.05);
   border-radius: 5px;
 }
 

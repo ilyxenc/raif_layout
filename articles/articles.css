@@ -55,6 +55,21 @@
 .articlesDateCaption20 {
   margin-top: 20px;
   margin-bottom: 9px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.articlesDateCaption20:hover {
+  transition: 0.3s;
+  color: #FEE600;
+  background: #2B2D33;
+  border-radius: 5px;
+  transform: scale(1.03);
+  box-shadow: 0 0 0 5px #2B2D33;
 }
 
 .articlesDateItemImg {
