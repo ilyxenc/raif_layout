@@ -130,6 +130,18 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 4px;
   word-break: break-word;
+  display: block;
+  text-decoration: none;
+  outline: none;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.indexNewsItem:hover {
+  transition: 0.3s;
+  opacity: 0.7;
 }
 
 .indexNewsItem .caption16 {
