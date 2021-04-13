@@ -234,11 +234,11 @@
   font-family: "Futura_Bold" !important;
 }
 
-.articleSvgTablet {
+.articleSvgTablet, .articleSvgMobile {
   display: none;
 }
 
-.articleSvg, .articleSvgTablet {
+.articleSvg, .articleSvgTablet, .articleSvgMobile {
   width: 100%;
   height: auto;
   /* z-index: -3; */
@@ -391,6 +391,14 @@
 }
 
 @media only screen and (max-width: 668px) {
+  .articleSvgTablet {
+    display: none;
+  }
+
+  .articleSvgMobile {
+    display: block;
+  }
+
   .articleBlock {
     width: 93.75%;
   }
