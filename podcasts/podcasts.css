@@ -1,5 +1,13 @@
+:root {
+  --podcastsBlockEmpty: 80px;
+}
+
 .podcastsBlock {
   margin-bottom: 80px;
+}
+
+.podcastsBlockTop {
+  margin-bottom: 0 !important;
 }
 
 .podcastsBlockFirst {
@@ -14,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.podcastsBlockEmpty {
+  height: var(--podcastsBlockEmpty);
 }
 
 .podcastsDateItem {
