@@ -170,13 +170,14 @@
         }
 
         let resizeDirection = (wid, hei) => {
-          if (hei < 750 && wid < 1300) {
-            clearWidOrHei('wid');
-            return 'vertical';
-          }
+
           if (wid >= 0 && wid < 668) {
             clearWidOrHei('hei');
             return 'horizontal';
+          }
+          if (hei < 750 && wid < 1300) {
+            clearWidOrHei('wid');
+            return 'vertical';
           }
           if (wid >= 668 && wid < 768) {
             clearWidOrHei('hei');
@@ -205,6 +206,8 @@
             prevEl: '.indexArrow1',
           },
         });
+
+        console.log(swiper.params);
 
         window.addEventListener("resize", () => {
           let wid = window.innerWidth,
